@@ -1,0 +1,1118 @@
+filename:ABC19980108.1830.0711.tml:SNT_LIST
+wall street journal DCT
+On the other hand, it's turning out to be another very bad financial week for Asia.
+The financial assistance from the World Bank and the International Monetary Fund are not helping.
+In the last twenty four hours, the value of the Indonesian stock market has fallen by twelve percent.
+The Indonesian currency has lost twenty six percent of its value.
+In Singapore, stocks hit a five year low.
+In the Philippines, a four year low.
+And in Hong Kong, a three percent drop.
+More problems in Hong Kong for a place, for an economy, that many experts thought was once invincible.
+Here's ABC's Jim Laurie.
+Not that long ago, before the Chinese takeover, the news about real estate here was that the sky was the limit the highest prices in the world.
+So when Wong Kwan spent seventy million dollars for this house, he thought it was a great deal.
+He sold the property to five buyers and said he'd double his money.
+In Hong Kong, is always belongs to the seller's market.
+Now with new construction under way, three of his buyers have backed out.
+And Wong Kwan will be lucky to break even.
+All across Hong Kong, the property market has crashed.
+Pamela Pak owns eight condominiums here.
+Pak ca n't find buyers.
+She estimates her properties, worth a hundred thirty million dollars in October, are worth only half that now.
+They believe ah it will be always up going up and up ah forever.
+Nobody believe this any more.
+Of all of Asia's economies, Hong Kong is the most robust.
+But in the past three months, stocks have plunged, interest rates have soared and the downturn all across Asia means that people are not spending here.
+Hotels are only thirty percent full.
+You can get seventy percent discounts at the shopping malls.
+Three thousand dollar pearls for eight hundred dollars.
+A two hundred dollar wool jacket for fifty dollars.
+Still, there are few buyers.
+And at the big brokerage houses, after ten years of boom, they're talking about layoffs.
+I think that the mood is fairly gloomy, and I think it's not going to change for a couple of years.
+So for Hong Kong, it's time, as investment bankers like to say, to reposition.
+To either hold on tight or get out, as much of Asia goes into recession.
+Jim Laurie, ABC News, Hong Kong.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+2_14_14	OCCURRENCE	0_3_3	overlap
+3_1_5	TIMEX	-1_-1_-1	Depend-on
+3_14_14	OCCURRENCE	3_1_5	overlap
+4_4_4	OCCURRENCE	3_14_14	overlap
+5_3_3	OCCURRENCE	0_3_3	overlap
+11_4_4	OCCURRENCE	0_3_3	before
+12_1_1	OCCURRENCE	11_4_4	after
+14_0_0	TIMEX	-1_-1_-1	Depend-on
+14_11_11	OCCURRENCE	14_0_0	before
+16_8_8	OCCURRENCE	0_3_3	before
+17_2_2	OCCURRENCE	0_3_3	overlap
+18_3_3	OCCURRENCE	17_2_2	overlap
+19_1_1	REPORTING	19_17_17	overlap
+19_17_17	TIMEX	-1_-1_-1	Depend-on
+20_1_1	I_STATE	0_3_3	overlap
+20_8_8	OCCURRENCE	20_1_1	after
+21_1_1	I_STATE	0_3_3	overlap
+23_2_5	TIMEX	-1_-1_-1	Depend-on
+23_8_8	OCCURRENCE	23_2_5	overlap
+23_12_12	OCCURRENCE	23_2_5	overlap
+23_15_15	OCCURRENCE	23_2_5	overlap
+25_2_2	OCCURRENCE	23_2_5	overlap
+29_12_12	OCCURRENCE	0_3_3	overlap
+30_1_1	I_STATE	0_3_3	overlap
+31_5_5	OCCURRENCE	0_3_3	overlap
+
+filename:APW19980213.1320.tml:SNT_LIST
+wall street journal DCT
+CANBERRA, Australia (AP) _ Qantas will almost double its flights between Australia and India by August in the search for new markets untouched by the crippling Asian financial crisis.
+This move comes barely a month after Qantas suspended a number of services between Australia, Indonesia, Thailand and Malaysia in the wake of the Asian economic crisis.
+The airline has also cut all flights to South Korea.
+Qantas plans daily flights between Sydney and Bombay, up from the current four flights a week, to boost business and tourism ties with India, the airline announced Friday.
+In a joint statement with Tourism Minister Andrew Thomson, it said two new flights would leave Bombay on Monday and Tuesday nights from March 30, with the third departing each Thursday from August 6.
+This will add nearly 700 seats a week on the route.
+Thomson, in India to talk to tourism leaders, said the flights would provide extra support to the growing tourism market.
+Qantas' India manager Khursheed Lam said the airline was working closely with the Australian Tourist Commission to develop greater awareness of Australia in the Indian market.
+Qantas will also appoint a Bombay-based public relations consultant.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_7_7	OCCURRENCE	1_15_15	before
+1_15_15	TIMEX	-1_-1_-1	Depend-on
+2_4_5	TIMEX	-1_-1_-1	Depend-on
+2_8_8	ASPECTUAL	2_4_5	before
+3_4_4	ASPECTUAL	2_8_8	overlap
+4_11_11	TIMEX	-1_-1_-1	Depend-on
+4_17_17	I_ACTION	4_11_11	after
+5_10_10	REPORTING	0_3_3	before
+5_15_15	OCCURRENCE	5_10_10	after
+6_2_2	OCCURRENCE	0_3_3	after
+7_4_4	OCCURRENCE	-1_-1_-1	Depend-on
+8_5_5	REPORTING	0_3_3	before
+8_9_9	OCCURRENCE	8_5_5	overlap
+8_17_17	I_ACTION	8_9_9	after
+9_3_3	OCCURRENCE	0_3_3	after
+
+filename:AP900815-0044.tml:SNT_LIST
+wall street journal DCT
+Iraq's Saddam Hussein, facing U.S. and Arab troops at the Saudi border, today sought peace on another front by promising to withdraw from Iranian territory and release soldiers captured during the Iran-Iraq war.
+Also today, King Hussein of Jordan arrived in Washington seeking to mediate the Persian Gulf crisis.
+President Bush on Tuesday said the United States may extend its naval quarantine to Jordan's Red Sea port of Aqaba to shut off Iraq's last unhindered trade route.
+In another mediation effort, the Soviet Union said today it had sent an envoy to the Middle East on a series of stops to include Baghdad.
+Soviet officials also said Soviet women, children and invalids would be allowed to leave Iraq.
+President Bush today denounced Saddam's ``ruinous policies of war,'' and said the United States is `` striking a blow for the principle that might does not make right.''
+In a speech delivered at the Pentagon, Bush seemed to suggest that American forces could be in the gulf region for some time.
+``No one should doubt our staying power or determination,'' he said.
+The U.S. military buildup in Saudi Arabia continued at fever pace, with Syrian troops now part of a multinational force camped out in the desert to guard the Saudi kingdom from any new thrust by Iraq.
+In a letter to President Hashemi Rafsanjani of Iran, read by a broadcaster over Baghdad radio, Saddam said he will begin withdrawing troops from Iranian territory on Friday and release Iranian prisoners of war.
+Iran said an Iraqi diplomatic delegation was en route to Tehran to deliver Saddam's message, which it said it would review ``with optimism.''
+Saddam appeared to accept a border demarcation treaty he had rejected in peace talks following the August 1988 cease-fire of the eight-year war with Iran.
+The move seemed aimed at heading off more trouble with Iran, which had condemned Iraq's invasion of Kuwait on Aug. 2 but also criticized the multinational force dispatched to Saudi Arabia.
+Saddam said he sought to `` turn the gulf into a lake of peace free of foreign fleets and forces that harbor ill intentions against us.''
+In other developments: _The Pentagon said that Defense Secretary Dick Cheney is considering urging Bush to order a national callup of armed forces reserves for active duty because of the drain on units sending soldiers abroad.
+Bush can call up to 200,000 reservists for up to 180 days without seeking congressional approval.
+_Soviet Foreign Ministry spokesman Yuri Gremitskikh said special ambassador Mikhail Sytenko left Tuesday for consultations with the governments of Syria, Jordan, Egypt and other Arab countries.
+Sytenko, a former deputy secretary-general of the United Nations, is also expected to visit Baghdad, Gremitskikh said at a regular news briefing today.
+_The outlook darkened for about 3,000 Americans caught in Iraq and Kuwait when Saddam sent his forces into the small, oil-rich sultanate.
+The Iraqi ambassador to Greece said in Athens the Americans and other stranded foreigners could leave `` as soon as the threats from the United States and its allies are eliminated.''
+ABC quoted an Iraqi Foreign Ministry official in Baghdad as saying Americans in Iraq are ``restrictees'' who will stay there until the crisis ends.
+_The Soviet Foreign Ministry said Soviet women, children and invalids would be permitted to leave Iraq.
+Spokesman Yuri Gremitskikh said the first group of 230 evacuees was assembling in Baghdad today, but evacuation plans were hampered by desert heat and lack of transportation.
+Nearly 9,000 Soviets were among the hundreds of thousands of foreigners trapped in Iraq and Kuwait.
+Iraq has agreed to allow all 880 Soviets in Kuwait to leave, but only by a 1,200-mile road route through Iraq and to the Iraq-Jordan border.
+_The British Foreign Office said today conditions in Kuwait appear to be deteriorating.
+There have been reports of wholesale looting but food and gasoline were still available, said a spokesman, who by custom was not identified.
+Banks remained closed.
+_The Iraqi ambassador to Venezuela said on Tuesday that Iraq would retaliate against Venezuela and other OPEC oil cartel members if they boost oil production to fill the gap created by blocked supplies from Iraq and Kuwait.
+With Kuwait now `` annexed,'' Iraq has control of 20 percent of the world's oil reserves.
+A steep rise in world oil prices followed the Kuwait invasion.
+The U.N. Security Council on Aug. 6 ordered a global embargo on trade with Iraq as punishment for seizing Kuwait.
+Bush then sent U.S. troops and planes to Saudi Arabia, saying Iraqi troops massed nearby in Kuwait threatened Saudi Arabia and its vast oil reserves.
+Twelve Arab League nations voted for an Arab force to protect Saudi Arabia, with the vanguard of Syria's contingent arriving Tuesday, diplomatic sources in Riyadh, the Saudi capital. according to
+Egyptian and Moroccan troops are already there.
+The predominantly Moslem nation of Bangladesh said today its troops would join multinational forces in Saudi Arabia.
+The size of the contingent was not disclosed.
+Turkey and Saudi Arabia in effect shut down Iraq's major oil outlets through those countries, but Jordanian officials, a smaller line into Jordan according to remained operating.
+Truckloads of goods rolled into Iraq from Jordan on Tuesday and Iraqi-bound cargo was unloaded from ships at the Red Sea port ofAqaba despite the U.N.-ordered sanctions.
+King Hussein was reportedly carrying a message to Bush from Iraq's Saddam, with whom the king met Monday.
+The monarch will meet Bush on Thursday in Kennebunkport, Maine.
+Crown Prince Hassan, King Hussein's brother and political adviser, was asked today about the message the king was said to be carrying.
+In an interview from Jordan on ABC, he declined to discuss details, but said: ``I don't think that his majesty would be traveling at this crucial moment if the Iraqi leadership did not have a rational approach to the future.''
+A CBS News report citing unidentified Jordanian sources said that Saddam's message called for an international conference to be convened to discuss an Iraqi withdrawal from Kuwait.
+In exchange, the buildup of U.S. forces in the region would halt.
+Bush, however, says he sees no short-term hope for a diplomatic solution to the gulf crisis _ at least until economic sanctions force Saddam to withdraw his army.
+Bush held out the prospect of more aid to Jordan if it cooperates with the trade embargo.
+On Tuesday, the United States and Soviet Union conferred in Washington on putting an anti-Iraq naval blockade under a United Nations umbrella.
+The United States has provided most of the naval vessels so far to block Iraqi trade, with Britain, West Germany and Australia among the other nations lending support at sea.
+The embargo is meant to cripple Iraq by cutting off its exports of oil and imports of food and military supplies.
+Iraq imports about three-quarters of its foodstuffs.
+U.S. allies and other U.N. members have objected that the Security Council embargo resolution did not specifically authorize such a naval operation.
+Bush told a news conference on Tuesday that the naval barricade now in force might be extended to Jordan's Aqaba `` if it is a hole through which commerce flows'' in and out of Iraq.
+In Saudi Arabia, today is the eighth day of ``Desert Shield,'' the operation designed to confront an estimated 200,000 Iraqi soldiers now in Kuwait.
+Iraq boasts an army of 1 million members.
+At least 50,000 U.S. troops are expected to be committed to Desert Shield within weeks, including Marines, Army air assault forces, paratroopers and infantry.
+Iraq said it invaded Kuwait because of disputes over oil and money.
+It accused Kuwait of deliberately slashing Iraqi oil revenues by overproducing oil and driving down prices, among other charges.
+Iraq has 17 million residents, and Kuwait about 1.9 million.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_3_3	STATE	0_3_3	overlap
+2_1_1	TIMEX	-1_-1_-1	Depend-on
+2_6_6	OCCURRENCE	2_1_1	overlap
+2_9_9	I_ACTION	2_6_6	after
+2_11_11	OCCURRENCE	2_9_9	after
+3_3_3	TIMEX	-1_-1_-1	Depend-on
+3_4_4	REPORTING	3_3_3	overlap
+3_9_9	OCCURRENCE	3_4_4	after
+3_21_21	OCCURRENCE	3_9_9	after
+4_7_7	REPORTING	4_8_8	overlap
+4_8_8	TIMEX	-1_-1_-1	Depend-on
+4_11_11	OCCURRENCE	4_7_7	before
+5_3_3	REPORTING	4_7_7	overlap
+5_11_11	I_ACTION	5_3_3	after
+5_13_13	OCCURRENCE	5_11_11	after
+6_2_2	TIMEX	-1_-1_-1	Depend-on
+6_3_3	OCCURRENCE	6_2_2	overlap
+7_8_8	I_STATE	6_2_2	overlap
+7_10_10	I_ACTION	7_8_8	overlap
+8_3_3	I_ACTION	-1_-1_-1	Depend-on
+9_7_7	ASPECTUAL	0_3_3	before
+10_17_17	REPORTING	9_7_7	after
+10_20_20	ASPECTUAL	10_17_17	after
+10_21_21	OCCURRENCE	10_20_20	after
+11_1_1	REPORTING	10_17_17	after
+11_12_12	OCCURRENCE	11_1_1	after
+12_1_1	I_STATE	11_1_1	after
+12_3_3	I_ACTION	12_1_1	overlap
+13_2_2	I_STATE	12_1_1	overlap
+13_3_3	I_ACTION	13_2_2	overlap
+14_1_1	REPORTING	13_2_2	overlap
+14_3_3	I_ACTION	14_1_1	overlap
+15_5_5	REPORTING	0_3_3	before
+15_12_12	I_STATE	15_5_5	overlap
+15_13_13	I_ACTION	15_12_12	after
+16_2_2	OCCURRENCE	0_3_3	after
+17_6_6	REPORTING	0_3_3	before
+17_11_11	OCCURRENCE	17_12_12	overlap
+17_12_12	TIMEX	-1_-1_-1	Depend-on
+18_11_11	OCCURRENCE	18_22_22	overlap
+18_13_13	OCCURRENCE	18_11_11	after
+18_22_22	TIMEX	-1_-1_-1	Depend-on
+19_2_2	OCCURRENCE	0_3_3	before
+20_5_5	REPORTING	19_2_2	overlap
+20_15_15	OCCURRENCE	20_5_5	overlap
+21_1_1	REPORTING	0_3_3	overlap
+22_4_4	REPORTING	0_3_3	before
+22_12_12	I_ACTION	22_4_4	after
+22_14_14	OCCURRENCE	22_12_12	after
+23_3_3	REPORTING	22_4_4	overlap
+23_11_11	OCCURRENCE	23_14_14	overlap
+23_14_14	TIMEX	-1_-1_-1	Depend-on
+25_2_2	I_ACTION	0_3_3	before
+25_4_4	I_ACTION	25_2_2	after
+25_11_11	OCCURRENCE	25_4_4	after
+26_4_4	REPORTING	26_5_5	overlap
+26_5_5	TIMEX	-1_-1_-1	Depend-on
+26_9_9	I_STATE	26_4_4	overlap
+26_12_12	OCCURRENCE	26_9_9	overlap
+28_1_1	ASPECTUAL	26_12_12	overlap
+29_5_5	REPORTING	29_7_7	overlap
+29_7_7	TIMEX	-1_-1_-1	Depend-on
+29_11_11	OCCURRENCE	29_5_5	after
+29_22_22	OCCURRENCE	29_11_11	before
+29_26_26	OCCURRENCE	29_22_22	after
+32_5_6	TIMEX	-1_-1_-1	Depend-on
+32_7_7	I_ACTION	32_5_6	overlap
+33_2_2	OCCURRENCE	32_7_7	after
+33_10_10	REPORTING	33_2_2	overlap
+33_17_17	OCCURRENCE	33_10_10	before
+34_4_4	OCCURRENCE	0_3_3	before
+36_6_6	REPORTING	36_7_7	overlap
+36_7_7	TIMEX	-1_-1_-1	Depend-on
+36_11_11	OCCURRENCE	36_6_6	after
+37_7_7	REPORTING	36_6_6	after
+38_6_6	OCCURRENCE	0_3_3	before
+39_3_3	OCCURRENCE	39_9_9	overlap
+39_9_9	TIMEX	-1_-1_-1	Depend-on
+40_4_4	OCCURRENCE	39_3_3	after
+41_3_3	OCCURRENCE	41_6_6	overlap
+41_6_6	TIMEX	-1_-1_-1	Depend-on
+42_10_10	OCCURRENCE	42_11_11	overlap
+42_11_11	TIMEX	-1_-1_-1	Depend-on
+43_8_8	I_ACTION	42_10_10	after
+43_10_10	OCCURRENCE	43_8_8	after
+43_13_13	REPORTING	43_8_8	after
+44_8_8	REPORTING	0_3_3	before
+44_12_12	OCCURRENCE	44_8_8	before
+44_19_19	OCCURRENCE	44_12_12	after
+44_21_21	OCCURRENCE	44_19_19	after
+45_11_11	OCCURRENCE	44_21_21	after
+46_2_2	REPORTING	0_3_3	overlap
+46_4_4	PERCEPTION	46_2_2	overlap
+46_22_22	OCCURRENCE	46_4_4	after
+46_25_25	OCCURRENCE	46_22_22	after
+47_1_1	OCCURRENCE	44_8_8	after
+47_12_12	OCCURRENCE	47_1_1	after
+48_1_1	TIMEX	-1_-1_-1	Depend-on
+48_8_8	OCCURRENCE	48_1_1	overlap
+49_4_4	OCCURRENCE	48_8_8	before
+50_3_3	I_STATE	0_3_3	overlap
+50_5_5	OCCURRENCE	50_3_3	after
+52_7_7	OCCURRENCE	0_3_3	before
+52_13_13	OCCURRENCE	52_7_7	before
+53_1_1	REPORTING	53_6_6	overlap
+53_6_6	TIMEX	-1_-1_-1	Depend-on
+53_11_11	TIMEX	-1_-1_-1	Depend-on
+53_16_16	OCCURRENCE	53_11_11	after
+55_1_1	OCCURRENCE	0_3_3	overlap
+56_6_6	I_STATE	55_1_1	overlap
+56_9_9	I_STATE	56_6_6	after
+57_1_1	REPORTING	0_3_3	before
+57_3_3	OCCURRENCE	57_1_1	before
+58_1_1	I_ACTION	57_1_1	overlap
+59_1_1	STATE	0_3_3	overlap
+
+filename:APW19980219.0476.tml:SNT_LIST
+wall street journal DCT
+O'SMACH, Cambodia (AP) _ The top commander of a Cambodian resistance force said Thursday he has sent a team to recover the remains of a British mine removal expert kidnapped and presumed killed by Khmer Rouge guerrillas almost two years ago.
+Gen. Nhek Bunchhay, a loyalist of ousted Cambodian Prime Minister Prince Norodom Ranariddh, said in an interview with The Associated Press at his hilltop headquarters that he hopes to recover the remains of Christopher Howes within the next two weeks.
+Howes had been working for the Britain-based Mines Advisory Group when he was abducted with his Cambodian interpreter Houn Hourth in March 1996.
+There were many conflicting accounts of his fate.
+Howes' team was clearing mines 17 kilometers (10 miles) from Angkor Wat, the fabled 11th century temple that is Cambodia's main tourist attraction, when it was attacked.
+In January this year, British police officers who had been searching for Howes concluded he had probably been killed soon after being captured.
+The Foreign Office said it had informed the family of Howes, 37 years old when he was kidnapped, that he probably died within weeks or months of his capture on March 26, 1996.
+``Obviously, it is deeply discouraging for the family after 22 months, but there is no proof of life.
+But there is no evidence in either direction _ that there is proof of life or death,'' said a Foreign Office spokesman, speaking with customary anonymity.
+``We will continue to do everything we can to establish what has happened.''
+Thai military officials who monitor Cambodian affairs said privately Thursday that Britain, through its embassies in Thailand and Cambodia, has been pushing hard to resolve the Howes case as the second anniversary of his abduction nears.
+Nhek Bunchhay, who had been closely involved in the search for Howes before having to flee the Cambodian capital after a coup d'etat last year, appeared confident he would find Howes' remains.
+He said he received information from Khmer Rouge guerrillas on where the body had been buried, and recently ordered 10 of his men from a force of 500 near Khmer Rouge headquarters in Anlong Veng to conduct the search.
+If and when the remains are found, he said, they would be turned over to the British Embassy, apparently meaning they would be sent across the border into Thailand and onward to Bangkok.
+Nhek Bunchhay said he now believed Howes had been killed within a week of his capture by a Khmer Rouge faction loyal to Pol Pot, then the guerrilla group's leader.
+Pol Pot is considered responsible for the radical policies that led to the deaths of as many as 1.7 million Cambodians when the communist group held power in the late 1970s.
+At the time Howes was captured, the Khmer Rouge were a more or less united guerrilla force with more than 10,000 men under arms.
+But the group began to fall apart in mid-1996 after the defection of one of its top leaders, Ieng Sary.
+Other commanders, and thousands of guerrillas, followed him.
+A small hardcore group under Pol Pot continued to hold out at their headquarters at Anlong Veng in northern Cambodia near the Thai border.
+But in June last year, the remaining leadership had a falling out, and Pol Pot was arrested.
+In July last year in Phnom Penh, Cambodia's capital, Second Prime Minister Hun Sen staged a successful coup d'etat against First Prime Minister Prince Norodom Ranariddh.
+Ranariddh's loyalists, including Nhek Bunchhay, his top military commander, went into hiding or fled the capital.
+Nhek Bunchhay, evading an intensive manhunt, made his way to O'Smach, the last major outpost held by Ranariddh's forces.
+His men have held the stronghold _ which is on the border just opposite the Thai province of Surin _ against repeated intense attacks by Hun Sen's troops.
+They have been aided by Khmer Rouge guerrillas from Anlong Veng, who have formed an alliance with Ranariddh's resistance forces to oppose Hun Sen.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_12_12	REPORTING	1_13_13	overlap
+1_13_13	TIMEX	-1_-1_-1	Depend-on
+1_16_16	I_ACTION	1_37_40	overlap
+1_37_40	TIMEX	-1_-1_-1	Depend-on
+2_13_13	REPORTING	0_3_3	before
+2_27_27	I_STATE	2_13_13	overlap
+2_29_29	OCCURRENCE	2_27_27	after
+3_3_3	OCCURRENCE	3_21_22	overlap
+3_13_13	OCCURRENCE	3_21_22	overlap
+3_21_22	TIMEX	-1_-1_-1	Depend-on
+5_3_3	OCCURRENCE	3_21_22	overlap
+6_1_3	TIMEX	-1_-1_-1	Depend-on
+6_13_13	I_ACTION	6_1_3	overlap
+6_18_18	OCCURRENCE	6_13_13	before
+7_3_3	REPORTING	0_3_3	before
+7_6_6	REPORTING	7_3_3	before
+7_21_21	OCCURRENCE	7_23_25	overlap
+7_23_25	TIMEX	-1_-1_-1	Depend-on
+9_4_4	OCCURRENCE	-1_-1_-1	Depend-on
+10_2_2	ASPECTUAL	0_3_3	after
+10_4_4	OCCURRENCE	10_2_2	overlap
+11_7_7	REPORTING	11_9_9	overlap
+11_9_9	TIMEX	-1_-1_-1	Depend-on
+11_21_21	I_ACTION	11_7_7	before
+11_24_24	OCCURRENCE	11_21_21	after
+12_23_24	TIMEX	-1_-1_-1	Depend-on
+12_25_25	I_STATE	12_23_24	overlap
+13_1_1	REPORTING	12_25_25	overlap
+13_3_3	OCCURRENCE	13_1_1	before
+14_6_6	OCCURRENCE	0_3_3	after
+14_12_12	OCCURRENCE	14_6_6	after
+15_2_2	REPORTING	0_3_3	before
+15_4_4	TIMEX	-1_-1_-1	Depend-on
+15_5_5	I_STATE	15_4_4	overlap
+15_9_9	OCCURRENCE	15_11_12	overlap
+15_11_12	TIMEX	-1_-1_-1	Depend-on
+16_3_3	I_STATE	0_3_3	overlap
+17_5_5	OCCURRENCE	0_3_3	before
+18_3_3	ASPECTUAL	18_8_8	overlap
+18_5_5	OCCURRENCE	18_3_3	after
+18_8_8	TIMEX	-1_-1_-1	Depend-on
+19_6_6	OCCURRENCE	18_3_3	after
+20_7_7	ASPECTUAL	19_6_6	after
+20_9_9	OCCURRENCE	20_7_7	overlap
+22_1_3	TIMEX	-1_-1_-1	Depend-on
+22_14_14	OCCURRENCE	22_1_3	overlap
+23_9_9	OCCURRENCE	22_14_14	after
+24_2_2	OCCURRENCE	23_9_9	overlap
+26_3_3	OCCURRENCE	24_2_2	overlap
+
+filename:APW19980213.1310.tml:SNT_LIST
+wall street journal DCT
+CANBERRA, Australia (AP) _ Turning its back on 210 years of loyalty to the British royal family, a constitutional convention voted overwhelmingly Friday to make Australia a republic under its own president.
+Prime Minister John Howard, a monarchist himself, promised to put the question to a national referendum next year after convention delegates voted 89-52 for a republic, with 11 abstentions.
+Spontaneous applause echoed through the chamber and public galleries as the crucial vote passed by a wide margin.
+``I want a referendum,'' Howard said.
+``The Australian people are owed the opportunity of expressing an opinion on this.''
+``It would be a travesty in common sense terms of Australian democracy for that proposition not to be put to the Australian people,'' Howard said.
+Even in his own Cabinet, Howard is becoming increasingly isolated with his monarchist stance.
+Treasurer Peter Costello, Environment Minister Robert Hill and Attorney General Daryl Williams all voted to support the republic Friday.
+``This convention will be seen as a turning point in our history,'' Australian Republican Movement spokeswoman Mary Delahunty said.
+Pro-republicans hope to have an Australian president by the opening of the 2000 Olympics and the 100th anniversary of Australian federation.
+Calling for an amended constitution with a new preamble, to be written by Australian poets, republican Janet Holmes a Court said, ``We need the smell of eucalyptus in this, and the feel of red dust.''
+Monarchists hope to defeat the republic at the referendum.
+``The phony war has finished and the real referendum campaign has clearly begun,'' Australians for a Constitutional Monarchy executive director Kerry Jones said.
+``Well may we say `God save the Queen,' for nothing will save the republic,'' outraged monarchist delegate David Mitchell said.
+``The idea of a republic will fall to dust through the grace of almighty God.''
+Polls have shown public support for a republic increasing, rising from about 35 percent several years ago to about 51 percent this year, as pro-monarchist sentiment diminishes.
+Australia has been independent since 1901, but like many Commonwealth nations it still recognizes the British monarch as its head of state.
+Howard said Queen Elizabeth II is taking a great interest in the convention.
+``She is, I can assure you, from what I've been told, she's following the thing very closely and taking the view it's our business.
+``It's no secret that she's indicated to me ... she is a 20th century democrat, understands that the role of the crown in Australia rests in the hands of the Australian people as it has for almost a hundred years.''
+The model for a republic, adopted over bitter objections from those advocating direct election of a president, is for presidential nominations to be made with public input and the winning candidate decided by a two-thirds majority of Parliament.
+Former prime minister Paul Keating, who put the republic issue in the spotlight in his unsuccessful 1996 campaign for re-election, welcomed the result.
+``This is an important step along the path towards Australia claiming its full sovereignty, and due recognition that the monarchy can no longer serve us appropriately,'' Keating said.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_4_4	OCCURRENCE	1_22_22	overlap
+1_22_22	TIMEX	-1_-1_-1	Depend-on
+2_7_7	I_ACTION	1_22_22	after
+2_9_9	OCCURRENCE	2_7_7	after
+2_11_11	OCCURRENCE	-1_-1_-1	Depend-on
+3_2_2	OCCURRENCE	2_7_7	after
+3_13_13	OCCURRENCE	3_2_2	overlap
+4_1_1	I_STATE	0_3_3	overlap
+5_4_4	I_STATE	0_3_3	overlap
+6_18_18	OCCURRENCE	-1_-1_-1	Depend-on
+7_7_7	ASPECTUAL	0_3_3	overlap
+8_13_13	OCCURRENCE	8_18_18	overlap
+8_15_15	OCCURRENCE	8_13_13	after
+8_18_18	TIMEX	-1_-1_-1	Depend-on
+9_4_4	PERCEPTION	0_3_3	after
+10_1_1	I_STATE	0_3_3	overlap
+10_3_3	OCCURRENCE	10_1_1	after
+11_0_0	I_ACTION	0_3_3	before
+12_1_1	I_STATE	0_3_3	overlap
+12_3_3	OCCURRENCE	12_1_1	after
+13_4_4	ASPECTUAL	0_3_3	before
+13_9_9	OCCURRENCE	13_4_4	after
+14_3_3	OCCURRENCE	0_3_3	overlap
+15_6_6	OCCURRENCE	0_3_3	after
+16_2_2	REPORTING	0_3_3	before
+16_9_9	OCCURRENCE	16_2_2	overlap
+18_1_1	REPORTING	0_3_3	before
+18_6_6	OCCURRENCE	18_1_1	overlap
+19_14_14	OCCURRENCE	-1_-1_-1	Depend-on
+22_16_16	TIMEX	-1_-1_-1	Depend-on
+22_20_20	OCCURRENCE	22_16_16	overlap
+
+filename:NYT19980206.0466.tml:SNT_LIST
+wall street journal DCT
+WASHINGTON _ Following are statements made Friday and Thursday by Lawrence Wechsler, a lawyer for the White House secretary, Betty Currie; the White House; White House spokesman Mike McCurry, and President Clinton in response to an article in The New York Times on Friday about her statements regarding a meeting with the president: Wechsler on Thursday ``Without commenting on the allegations raised in this article, to the extent that there is any implication or suggestion that Mrs. Currie was aware of any legal or ethical impropriety by anyone, that implication or suggestion is entirely inaccurate.''
+White House on Thursday `` For the past few weeks we 've been subjected to false leaks designed to mislead both reporters and the American public.
+We're not going to dignify the latest false leak with a response.''
+McCurry on Friday ``I want to be absolutely clear, to the extent there is any implication or the slightest suggestion that Mrs. Currie believes that the President or anyone else tried to influence her recollection, that is absolutely false and a mischaracterization of the facts.
+I am shocked and dismayed by the numerous leaks regarding Mrs. Currie's grand jury testimony.''
+Clinton on Friday.
+``Once again, I never asked anybody to do anything but tell the truth.
+I know about the stories today.
+I was pleased that Ms. Currie's lawyers stated unambiguously this morning _ unambiguously _ that she's not aware of any unethical conduct.
+EDGE_LIST
+4_2_2	TIMEX	-1_-1_-1	Depend-on
+4_4_4	I_ACTION	4_2_2	overlap
+6_2_2	TIMEX	-1_-1_-1	Depend-on
+7_4_4	I_ACTION	6_2_2	overlap
+7_7_7	I_ACTION	7_4_4	after
+8_1_1	I_STATE	8_5_5	overlap
+8_5_5	TIMEX	-1_-1_-1	Depend-on
+
+filename:NYT19980206.0460.tml:SNT_LIST
+wall street journal DCT
+WASHINGTON _ The economy created jobs at a surprisingly robust pace in January, the government reported on Friday, evidence that America's economic stamina has withstood any disruptions caused so far by the financial tumult in Asia.
+The Bureau of Labor Statistics said the economy added 358,000 jobs last month, far above the 235,000 forecast by economists.
+It was the third consecutive month that job generation has been exceptionally strong.
+With growing opportunities for work drawing more people into the labor force, the unemployment rate remained at 4.7 percent last month, just a notch above its quarter-century low.
+The demand for workers also led employers to raise wages again last month.
+Average hourly earnings of production and nonsupervisory employees rose 4 cents, to $12.51.
+The gain left wages 3.8 percent higher than a year earlier, extending a trend that has given back to workers some of the earning power they lost to inflation in the last decade.
+But economists said the wage increase was not enough to raise any concerns about higher inflation.
+And because the Federal Reserve has made clear that it expects the economy to slow in coming months as ripple effects from Asia reach the United States, investors disregarded the large jobs gains, betting that neither a rise in interest rates nor resurgent inflation is looming.
+Stocks rose, pushing the Dow Jones industrial average up 72.24 points, to 8,189.49, leaving the index within 70 points of its record high set on Aug. 6.
+In the bond market, a sensitive barometer of inflation anxiety, prices edged up , pushing down the yield on the benchmark 30-year Treasury bond to 5.92 percent from 5.93 percent.
+``Job creation is sturdy and we have effective price stability,'' said Paul McCulley, an economist at UBS Securities.
+``The bottom line is that we've got a lovely economy.''
+With potential inflation counterbalanced by worries about possible price declines, the Fed and its chairman, Alan Greenspan, have suggested that they intend to keep interest rates unchanged until the economy tilts clearly in one direction or another.
+The job figures for January extended a surge in employment gains that began last fall, just when the labor market had showed signs of cooling.
+After accounting for a small downward revision Friday to December's figures, the economy has been creating jobs at a rate of 358,000 a month for the last four months _ and 381,000 over the last three months _ after averaging 242,000 for the first nine months of 1997.
+The surge in jobs reflects a remarkable confluence of positive and self-reinforcing economic forces.
+Inflation has been almost nonexistent, and consumer confidence has been extremely strong.
+After a short, sharp drop when Asia's financial problems first became clear, the stock market has rebounded and corporate profits have remained healthy.
+Long-term interest rates, an important indicator of economic stability, have fallen in the last few months.
+Lower rates have helped invigorate housing and other interest-sensitive sectors of the economy by making loans more affordable, and have allowed companies to continue investing heavily in more efficient equipment.
+The likelihood that the federal budget will soon move from deficit into surplus has further improved the outlook.
+The less money the government needs to borrow, the more is freed for private investment.
+President Clinton welcomed the job figures at a news conference Friday.
+His advisers said the results reflected not just from balancing the budget, but also initiatives like improved access to education and training and the opening of foreign markets to trade.
+``There are enormous economic and social benefits from our nation's high-employment economy,'' said Janet Yellen, the chairwoman of the White House's Council of Economic Advisers.
+Some of the biggest employment gains came in the construction industry, which added 92,000 jobs in January.
+The increase reflected the strength of the housing industry, which has been helped not just by declining interest rates but also by unusually warm weather.
+Service industries also showed solid job gains, as did manufacturers, two areas expected to be hardest hit when the effects of the Asian crisis hit the American economy.
+The major harm from Asia is likely to come from the plunge in the value of many Asian currencies relative to the dollar, a situation that is expected to lead to a surge of inexpensive imports into the United States, hurting American competitors.
+And the weakness of the Asian economies is also likely to lead to decreased demand for American exports.
+``The economy has been running on the fumes of the strength from before the Asia shock,'' McCulley said.
+``Those fumes will exhaust themselves, and the manufacturing sector is going to start getting beat up in the spring.''
+The figures showed the unemployment rate for adult men declined to 3.8 percent last month from 4.1 percent in December, the lowest figure for almost two decades.
+The rate for adult women rose 0.4 percent, to 4.4 percent.
+For the first time, the Labor Department broke out unemployment by education level as well as gender, age and race.
+The analysis showed unemployment rates dropped steadily with higher levels of education.
+Among people with less than a high school education, the rate in January was 7.2 percent.
+Among high school graduates, the rate was 3.9 percent, and college graduates, 1.9 percent.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_4_4	OCCURRENCE	1_12_12	overlap
+1_12_12	TIMEX	-1_-1_-1	Depend-on
+2_5_5	REPORTING	0_3_3	overlap
+2_8_8	OCCURRENCE	2_11_12	overlap
+2_11_12	TIMEX	-1_-1_-1	Depend-on
+4_15_15	STATE	4_19_20	overlap
+4_19_20	TIMEX	-1_-1_-1	Depend-on
+5_5_5	OCCURRENCE	5_11_12	overlap
+5_8_8	OCCURRENCE	5_11_12	overlap
+5_11_12	TIMEX	-1_-1_-1	Depend-on
+6_8_8	OCCURRENCE	5_11_12	overlap
+7_2_2	OCCURRENCE	6_8_8	after
+7_11_11	ASPECTUAL	7_2_2	overlap
+8_2_2	REPORTING	0_3_3	before
+9_6_6	OCCURRENCE	0_3_3	before
+9_10_10	I_STATE	9_6_6	overlap
+9_14_14	OCCURRENCE	9_10_10	after
+9_16_17	TIMEX	-1_-1_-1	Depend-on
+9_23_23	OCCURRENCE	9_16_17	overlap
+10_1_1	OCCURRENCE	10_25_26	before
+10_2_2	OCCURRENCE	10_1_1	overlap
+10_25_26	TIMEX	-1_-1_-1	Depend-on
+11_11_11	OCCURRENCE	0_3_3	before
+14_3_3	OCCURRENCE	0_3_3	overlap
+15_4_4	TIMEX	-1_-1_-1	Depend-on
+15_5_5	ASPECTUAL	15_4_4	after
+16_15_15	OCCURRENCE	16_25_28	overlap
+16_25_28	TIMEX	-1_-1_-1	Depend-on
+17_4_4	OCCURRENCE	0_3_3	overlap
+19_16_16	OCCURRENCE	0_3_3	before
+20_10_10	OCCURRENCE	20_12_15	overlap
+20_12_15	TIMEX	-1_-1_-1	Depend-on
+21_3_3	I_ACTION	20_10_10	after
+21_4_4	OCCURRENCE	21_3_3	overlap
+22_15_15	OCCURRENCE	0_3_3	overlap
+24_2_2	OCCURRENCE	24_10_10	overlap
+24_10_10	TIMEX	-1_-1_-1	Depend-on
+25_2_2	REPORTING	24_2_2	overlap
+25_5_5	OCCURRENCE	25_2_2	overlap
+27_6_6	OCCURRENCE	27_16_16	overlap
+27_16_16	TIMEX	-1_-1_-1	Depend-on
+28_2_2	OCCURRENCE	27_6_6	overlap
+29_3_3	OCCURRENCE	0_3_3	overlap
+32_4_4	OCCURRENCE	0_3_3	overlap
+33_3_3	OCCURRENCE	0_3_3	after
+34_2_2	OCCURRENCE	0_3_3	overlap
+34_9_9	OCCURRENCE	34_13_14	overlap
+34_13_14	TIMEX	-1_-1_-1	Depend-on
+35_5_5	OCCURRENCE	34_2_2	overlap
+36_7_7	OCCURRENCE	35_5_5	overlap
+37_2_2	OCCURRENCE	34_2_2	overlap
+37_5_5	OCCURRENCE	37_2_2	overlap
+
+filename:ABC19980120.1830.0957.tml:SNT_LIST
+wall street journal DCT
+For his part, Fidel Castro is the ultimate political survivor.
+People have predicted his demise so many times, and the US has tried to hasten it on several occasions.
+Time and again, he endures.
+He has outlasted and sometimes outsmarted eight American presidents.
+Fidel Castro invited John Paul to come for a reason.
+This is clearly an opportunity for Cuba to look good internationally.
+The entire world will see images of the Pope in Cuba.
+They'll see images of the Pope with Fidel Castro.
+It will give the rest of the world the view that Cuba is like any other nation, something the US has, of course, tried to persuade the world that it is not .
+For nearly forty years, the United States has said categorically it would not tolerate totalitarian rule in its own backyard.
+It is the US economic and political embargo which has kept Cuba in a box.
+The main positive for Castro to invite the Pope is international, to be able to say to the rest of the world, this government is not as closed, as intolerant, uh as totalitarian as some make it out to be.
+One of the scenarios widely advanced before the visit is that through the Pope, Cuba, still led by Castro, can begin a more productive relationship with the world.
+That will, in turn, bring pressure on Washington to change.
+Those observers looking for a battle between uncompromising representatives and very different ideologies will, in all likelihood, be disappointed.
+Castro has said that you can be a Communist and still be a Christian.
+He says he and the Pope both want to end the exploitation of man by man.
+The question is who will Cubans believe?
+The main negative is the risk that the Pope's visit will persuade a great many more Cubans to break loose of the Cuban government.
+If so, then the Pope's visit would really open up a new chapter in the government's relations with its own society.
+For the Cuban government, that is the risk.
+At the end of the broadcast this evening, one more trip around Havana to see what it's been like since the last time.
+And in just a moment Diane Sawyer will have some other news.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+2_2_2	I_ACTION	0_3_3	before
+2_4_4	OCCURRENCE	2_2_2	after
+3_4_4	OCCURRENCE	2_2_2	after
+4_2_2	OCCURRENCE	3_4_4	overlap
+5_2_2	OCCURRENCE	4_2_2	after
+5_6_6	OCCURRENCE	5_2_2	after
+7_4_4	PERCEPTION	0_3_3	after
+9_2_2	OCCURRENCE	0_3_3	after
+10_1_3	TIMEX	-1_-1_-1	Depend-on
+10_8_8	REPORTING	10_1_3	overlap
+10_13_13	I_ACTION	10_8_8	after
+11_10_10	ASPECTUAL	10_1_3	overlap
+13_16_16	OCCURRENCE	0_3_3	overlap
+14_9_9	OCCURRENCE	0_3_3	after
+17_1_1	REPORTING	0_3_3	overlap
+17_7_7	I_STATE	17_1_1	overlap
+17_9_9	ASPECTUAL	17_7_7	after
+18_6_6	STATE	0_3_3	after
+
+filename:PRI19980205.2000.1998.tml:SNT_LIST
+wall street journal DCT
+Thousands of people in Germany have been demonstrating today against the high level of unemployment in the country.
+Latest figures show a sharp rise, with nearly five million Germans out of work.
+Caroline Wyatt reports.
+Chanting Helmut Kohl must go the unemployed took to the streets of the German capital, Berlin, mirroring protests around the country.
+Joblessness is now at its highest level in Germany since the second world war.
+With the general election due this September, record figures could n't have come at a worst time for Chancellor Kohl.
+His promise to half unemployment by the year two thousand has now been abandoned.
+And the German electorate appears increasingly eager to dispense with the services of Europe's longest serving leader.
+Caroline Wyatt, BBC news, Bonn.
+EDGE_LIST
+1_7_7	OCCURRENCE	1_8_8	overlap
+1_8_8	TIMEX	-1_-1_-1	Depend-on
+4_0_0	OCCURRENCE	-1_-1_-1	Depend-on
+6_12_12	OCCURRENCE	-1_-1_-1	Depend-on
+7_11_11	TIMEX	-1_-1_-1	Depend-on
+7_13_13	ASPECTUAL	7_11_11	overlap
+
+filename:ea980120.1830.0071.tml:SNT_LIST
+wall street journal DCT
+Good evening from the central park in downtown Havana.
+We are here this week to witness the rendezvous that Fidel Castro and the Pope are having with history.
+We are here because what happens on this island will also have an impact on the United States.
+Everything that happens in Cuba gets America's attention.
+Incidentally, we just show up to do the broadcast, and Cubans want to know what we 're going to tell Americans, in many cases, what their relatives in the United States are going to hear.
+Well, this is the eve of the Pope's visit to one of the last bastions of Communism anywhere in the world, and it is already causing enormous expectations.
+In Revolution Square, they put up a giant cross today.
+And right across from the Cuban revolutionary icon Che Guevara, they now have a giant portrait of Jesus.
+Above it in Spanish, Jesus, in you we believe.
+Not all Cubans believe, but Castro has invited everyone to welcome the man who has been one of Communism's most effective adversaries, and that's why there is suspense.
+Everyone appears to believe that somehow Cuba is going to change.
+Castro has said officially that it's okay to be enthusiastic.
+And so, people are increasingly enthusiastic by the day-
+[[NS]]
+Today, Cuban television, which clings to the Communist Party line, actually began to promote its papal coverage.
+Today, hundreds of people from the US began to arrive, including some Cuban Americans who left here when Castro came to power and are returning to Havana for the first time.
+The Pope's visit is important, but they are also coming home.
+This is quite an extraordinary story unfolding here.
+We'll come back to Havana later in the broadcast.
+But now we 're going to go back to New York, where Diane Sawyer has the rest of the news.
+Diane?
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+2_3_4	TIMEX	-1_-1_-1	Depend-on
+2_6_6	PERCEPTION	2_3_4	overlap
+3_5_5	OCCURRENCE	2_3_4	overlap
+5_8_8	OCCURRENCE	0_3_3	overlap
+5_11_11	I_STATE	5_8_8	overlap
+7_4_4	OCCURRENCE	7_9_9	overlap
+7_9_9	TIMEX	-1_-1_-1	Depend-on
+10_3_3	I_STATE	0_3_3	overlap
+11_1_1	I_STATE	0_3_3	overlap
+11_3_3	I_STATE	11_1_1	overlap
+11_10_10	OCCURRENCE	11_3_3	after
+12_2_2	REPORTING	0_3_3	before
+15_0_0	TIMEX	-1_-1_-1	Depend-on
+15_11_11	ASPECTUAL	15_0_0	overlap
+15_13_13	OCCURRENCE	15_11_11	after
+16_0_0	TIMEX	-1_-1_-1	Depend-on
+16_7_7	ASPECTUAL	16_0_0	overlap
+16_9_9	OCCURRENCE	16_7_7	after
+17_2_2	OCCURRENCE	0_3_3	after
+20_1_1	TIMEX	-1_-1_-1	Depend-on
+20_6_6	OCCURRENCE	20_1_1	after
+
+filename:APW19980227.0476.tml:SNT_LIST
+wall street journal DCT
+THE HAGUE, Netherlands (AP) _ The World Court Friday rejected U.S. and British objections to a Libyan World Court case that has blocked the trial of two Libyans suspected of blowing up a Pan Am jumbo jet over Scotland in 1988.
+Libya, which brought the case to the United Nations' highest judicial body in its dispute with the United States and Britain, hailed the ruling and said it would press anew for a trial in a third neutral country.
+Both U.S. and British officials filed objections to the court's jurisdiction in 1995, claiming Security Council resolutions imposed on Lybia to force the suspects' extradition overruled a 1971 Convention which gives Libya the right to try the men.
+The decision, 3rd graf pvs.
+EDGE_LIST
+1_8_8	TIMEX	-1_-1_-1	Depend-on
+1_9_9	OCCURRENCE	1_8_8	overlap
+2_21_21	I_ACTION	1_9_9	after
+2_25_25	REPORTING	2_21_21	overlap
+3_5_5	OCCURRENCE	3_12_12	overlap
+3_12_12	TIMEX	-1_-1_-1	Depend-on
+3_13_13	I_ACTION	3_5_5	overlap
+3_25_25	OCCURRENCE	3_13_13	overlap
+
+filename:PRI19980213.2000.0313.tml:SNT_LIST
+wall street journal DCT
+Officials in California are warning residents that oncoming rains will cause dangerous and unpredictable landslides.
+From member station KQED, Auncil Martinez reports.
+Experts say the ground is so saturated it cannot absorb any more water.
+So that means soil will fall off in chunks and destroy anything in its path.
+In Los Angeles that lesson was brought home today when tons of earth cascaded down a hillside, ripping two houses from their foundations.
+No one was hurt, but firefighters ordered the evacuation of nearby homes and said they'll monitor the shifting ground.
+In the northern California town of Rio Nido, officials say a football field sized slab of hillside could still break loose at any time and destroy an entire neighborhood.
+And in San Francisco, a mansion overlooking the Pacific Ocean and the Golden Gate Bridge is slipping toward the sea.
+Forecasters say the picture will get worse because more rains are on the way.
+For NPR news, I'm Auncil Martinez reporting.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_4_4	I_ACTION	0_3_3	overlap
+1_10_10	OCCURRENCE	1_4_4	after
+3_1_1	REPORTING	1_4_4	overlap
+4_2_2	I_STATE	3_1_1	overlap
+4_5_5	OCCURRENCE	4_2_2	after
+5_8_8	TIMEX	-1_-1_-1	Depend-on
+5_13_13	OCCURRENCE	5_8_8	overlap
+5_17_17	OCCURRENCE	5_13_13	overlap
+6_3_3	OCCURRENCE	5_13_13	after
+6_6_6	I_ACTION	5_13_13	after
+7_9_9	REPORTING	0_3_3	overlap
+7_19_19	OCCURRENCE	7_22_23	overlap
+7_22_23	TIMEX	-1_-1_-1	Depend-on
+8_16_16	OCCURRENCE	0_3_3	overlap
+9_1_1	REPORTING	0_3_3	overlap
+9_5_5	ASPECTUAL	9_1_1	after
+
+filename:CNN19980227.2130.0067.tml:SNT_LIST
+wall street journal DCT
+Live from Atalanta, good evening Lynne Russell, CNN headline news.
+New evidence is suggesting that a series of bombings in Atalanta and last month 's explosion at an Alabama women's clinic might be related.
+Pierre Thomas has the latest.
+Atlanta nineteen ninety-six.
+A bomb blast shocks the Olympic games.
+One person is killed.
+January nineteen ninety-seven.
+Atlanta again.
+This time a bomb at an abortion clinic.
+More people are hurt.
+And just last month, an off duty policeman is killed when a bomb explodes at another abortion clinic.
+Location, Birmingham, Alabama.
+This man, Eric Rudolph has already been charged in the Birmingham bombing.
+Now officials are investigating whether, Rudolph, who remains at large, is linked to all three attacks.
+The reason, authorities have discovered tantalizing new evidence.
+Steel plates recovered at the Olympic park bombing appear to match those found at the abortion clinic bombing in Atlanta.
+Those plates may have come from a machine shop in north Carolina, where a friend of Rudolph worked.
+And nails found in the Atlanta abortion clinic bombing are identical to those discovered at Rudolph's storage shed in north Carolina.
+A senior law enforcement source tells CNN, there is a lot of circumstantial evidence and it would be extraordinary to have all these bits and pieces and there not be a connection.
+And law enforcement sources say they ca n't ignore letters penned under the name army of god.
+Army of god is a secret organization that hates abortion providers, homosexuals and the US government.
+Army of god letters claim responsibility for the Atlanta abortion clinic bombing, a nineteen ninety-seven attack on a gay lounge and the Birmingham assault.
+An intense manhunt conducted by the FBI and the bureau of alcohol, tobacco and firearms continues for Rudolph in the wilderness of western north Carolina.
+And this week, FBI director Louie Freeh assigned more agents to the search.
+Freeh also ordered the investigation consolidate information under the Atlanta task force, another indication officials suspect a link between all the bombings.
+Privately, authorities say Rudolph has become a focus of their investigation.
+Publicly, they are unwilling to make any sweeping assertion.
+The reason, they remember Richard Jewell.
+pierre thomas, CNN, Washington.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+2_3_3	I_STATE	0_3_3	overlap
+4_1_2	TIMEX	-1_-1_-1	Depend-on
+5_3_3	OCCURRENCE	4_1_2	overlap
+6_3_3	OCCURRENCE	5_3_3	overlap
+10_3_3	OCCURRENCE	0_3_3	overlap
+11_2_3	TIMEX	-1_-1_-1	Depend-on
+11_9_9	OCCURRENCE	11_2_3	overlap
+11_13_13	OCCURRENCE	11_9_9	after
+13_7_7	OCCURRENCE	0_3_3	before
+14_0_0	TIMEX	-1_-1_-1	Depend-on
+14_3_3	I_ACTION	14_0_0	overlap
+14_11_11	STATE	14_3_3	overlap
+15_4_4	OCCURRENCE	14_0_0	before
+16_8_8	I_STATE	15_4_4	overlap
+16_10_10	OCCURRENCE	16_8_8	overlap
+17_4_4	OCCURRENCE	16_8_8	before
+19_13_13	OCCURRENCE	0_3_3	overlap
+20_4_4	REPORTING	0_3_3	overlap
+20_8_8	OCCURRENCE	20_4_4	overlap
+22_4_4	I_ACTION	0_3_3	overlap
+23_15_15	ASPECTUAL	0_3_3	overlap
+24_1_2	TIMEX	-1_-1_-1	Depend-on
+24_7_7	OCCURRENCE	24_1_2	overlap
+25_2_2	I_ACTION	24_7_7	overlap
+26_2_2	REPORTING	0_3_3	overlap
+26_5_5	OCCURRENCE	26_2_2	before
+28_3_3	OCCURRENCE	26_2_2	overlap
+
+filename:AP900816-0139.tml:SNT_LIST
+wall street journal DCT
+The Persian Gulf showdown between Iraq and the United States took a more personal turn Thursday when Iraq's Saddam Hussein called President Bush a liar and said the outbreak of holy war could bring thousands of Americans home in coffins.
+Bush, commenting on the two-week-old gulf crisis from his vacation home in Maine, said he saw little reason to be optimistic about a settlement of the dispute, which stems from Iraq's invasion of oil-wealthy Kuwait and its subsequent military buildup on the border of Saudi Arabia.
+After a two-hour meeting at his Kennebunkport home with King Hussein of Jordan, Bush said, ``I did not come away with any feeling of hope'' that Iraq would withdraw its army from Kuwait.
+Bush also said Thursday that King Hussein assured him Jordan would close the last remaining free port to most Iraqi trade as the economic embargo on materials to Iraq continued unabated.
+Foodstuffs are among the goods being blocked from entry; Iraq imports about three-quarters of its food.
+Pentagon sources in Washington meanwhile said the Bush administration plans to deploy 45,000 Marines to the region to back up the thousands of Army, Navy and Air Force troops already in place in the gulf and the Saudi desert.
+At a news conference, Secretary of State James A. Baker III said Jordan `` is seeking some guidance'' about a provision in the U.N.-backed trade embargo that allows food for humanitarian purposes.
+Worries however grew about the safety of Americans and other Westerners trapped in Kuwait.
+Iraqi military authorities ordered all Americans and Britons in Kuwait to assemble at a hotel, officials said.
+``Very few'' of the 2,500 Americans in occupied Kuwait complied with the order, a senior U.S. official told The Associated Press.
+Iraq said the roundup was to protect them from unspecified threats; British Foreign Office minister William Waldegrave called the order ``grave and sinister.''
+``What we fear is that they will be interned somewhere, most likely in Iraq,'' Waldegrave said.
+A total of about 3,000 Americans, 3,000 Britons and more than 450 Japanese are in Iraq and Kuwait.
+Overall, more than 2 million foreigners are in both countries.
+Iraq has called them ``restrictees.''
+In addition to the estimated 45,000 Marines to ultimately be part of Operation Desert Shield, Stealth fighter planes and the aircraft carrier John F. Kennedy are also headed to Saudi Arabia to protect it from Iraqi expansionism.
+In Washington, Pentagon spokesman Pete Williams said Iraq has continued to increase its armed forces in Kuwait and they now number about 160,000.
+Saddam has been under international quarantine since his Aug. 2 power-grab, or what he calls an ``eternal merger'' with Kuwait.
+In a long verbal attack read on Iraqi television Thursday, Saddam repeatedly called Bush ``a liar'' and said a shooting war could produce body bags courtesy of Baghdad.
+``We continue to pray and pray hard to God so that there will be no confrontation whereby you will receive thousands of Americans wrapped in sad coffins after you had pushed them into a dark tunnel,'' Saddam said.
+He called U.S. soldiers massing in Saudi Arabia the real occupiers in the Persian Gulf.
+Replied State Department deputy spokesman Richard Boucher, ``We have n't really analyzed the statement in detail but it appears to be just another example of his outlandish rhetoric and his attempts to distort the truth.
+``We believe that his words cannot distract the world from the facts of Iraqi aggression.''
+An international land, sea and air force has mobilized since Iraq's invasion, which was sparked by disputes over oil, land and repayment of war loans.
+In the largest U.S. military operation since Vietnam, an estimated 20,000 American GIs have already massed to defend Saudi Arabia.
+``We do n't just arrive,'' said four-star Gen. John Dailey, assistant commandant of the U.S. Marine Corps.
+``We're there to stay for a fairly lengthy period.''
+Egypt, Syria, Morocco and Bangladesh also committed ground troops, to a much lesser degree.
+The U.S. Navy has 27 ships in the maritime barricade of Iraq.
+They are aided by Britain, West Germany, Australia, Canada, the Netherlands and Belgium.
+Bush was expected to authorize naval commanders to use ``the minimum force necessary'' to interdict shipments to and from Iraq, a U.S. official said.
+That could include firing across the bow to halt a ship.
+In the air, U.S. Air Force fliers say they have engaged in ``a little cat and mouse'' with Iraqi warplanes, which have retreated when weapons radar locks onto them.
+``They do n't want to play with us,'' one U.S. crew chief said.
+In Kuwait, the Iraqis have rimmed the capital city with an air-defense system, according to a U.S. official who spoke on the condition of anonymity.
+He declined to say if the weapons included missiles, but the Iraqis have them in their arsenal.
+The Iraqis also possess chemical weapons.
+The combined operations are designed to isolate and strangle Iraq until it retreats from Kuwait.
+The quarantine hopes to staunch the flow of Iraqi oil, which is Iraq's economic lifeblood, and clamp down on food and supplies going in.
+Iraq now controls 20 percent of the world's oil reserves with its conquest of Kuwait.
+Only Saudi Arabia has more oil reserves.
+The economic chokehold appears to be working.
+The Lloyd's List International newspaper, which monitors worldwide shipping, said Iraq's fleet of 80 tankers and cargo ships has stopped regular trading.
+John Prescott, a shipping correspondent, said there was no shipping in Kuwaiti or Iraqi ports and that activity was trailing off in the Jordanian port of Aqaba.
+Bush's chief objective in his meeting with Hussein was to press the king to shut down Iraq's food and oil supply route from Aqaba on the Red Sea.
+Aqaba is Iraq's only outlet now that an international noose has tightened.
+Bush has indicated the U.S. Navy will barricade the port from Iraqi ships.
+The president also has offered to help offset Jordan's costs because 40 percent of its exports go to Iraq and 90 percent of its oil comes from there.
+``It's our only outlet to the sea and the rest of the world,'' Hussein said.
+He also said of trade with Iraq: ``There are no shipments at the moment.''
+A day earlier, scores of trucks, many with Iraqi license plates, streamed north out of Aqaba to Amman and onto the desert highway bound for Iraq.
+The Jordanian monarch met this week with Saddam, but he told reporters he had no message from Baghdad.
+``I am not talking on behalf of anyone in the area ... but myself,'' Hussein said.
+In the United Nations, Libya called for the replacement of U.S. forces in the Persian Gulf with Arab League forces and U.N. soldiers.
+Libyan leader Moammar Gadhafi, in a letter to the U.N. Secretary-General, also called for an emergency Security Council meeting in Geneva to remove U.S. forces.
+There was no decision on a meeting.
+Thirty-two of the 159 U.N. members had filed compliance reports by Wednesday, and all were honoring the sanctions Iraq.
+Also Thursday, Saudi Arabia called for an emergency conference of the Organization of Petroleum Exporting Countries to discuss how much oil to pump.
+The minister denied the kingdom had notified notified any of its customers of any cutbacks in oil supply.
+Reports attributed to the Japanese foreign ministry said Saudi Arabia told U.S., European and Japanese oil companies of a 15-20 percent cutback in its oil supply in September.
+Meanwhile, Egypt's official Middle East News Agency said Thursday that Saddam was the target of an assassination attempt, which led to ``large-scale'' arrests, including some close associates of the Iraqi strongman.
+The agency quoted witnesses as saying tanks and armored cars are patrolling the streets of Baghdad.
+There was no independent confirmation of the report by the government-run news agency, which did not say when the reported attempt occurred.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_10_10	OCCURRENCE	1_15_15	overlap
+1_15_15	TIMEX	-1_-1_-1	Depend-on
+1_20_20	I_ACTION	1_10_10	before
+1_28_28	ASPECTUAL	1_20_20	after
+2_1_1	I_ACTION	0_3_3	overlap
+3_2_2	TIMEX	-1_-1_-1	Depend-on
+3_14_14	REPORTING	3_2_2	after
+3_18_18	OCCURRENCE	3_14_14	before
+4_2_2	REPORTING	4_3_3	overlap
+4_3_3	TIMEX	-1_-1_-1	Depend-on
+4_7_7	I_ACTION	4_2_2	before
+4_11_11	OCCURRENCE	4_7_7	after
+4_29_29	ASPECTUAL	0_3_3	overlap
+6_5_5	REPORTING	4_2_2	overlap
+6_11_11	OCCURRENCE	6_5_5	after
+6_18_18	OCCURRENCE	6_11_11	after
+7_11_11	REPORTING	0_3_3	before
+8_2_2	OCCURRENCE	0_3_3	before
+9_3_3	I_ACTION	8_2_2	overlap
+9_11_11	OCCURRENCE	9_3_3	after
+10_9_9	OCCURRENCE	9_3_3	after
+11_1_1	REPORTING	9_3_3	after
+11_6_6	OCCURRENCE	11_1_1	after
+12_2_2	I_STATE	0_3_3	overlap
+16_27_27	OCCURRENCE	0_3_3	overlap
+16_32_32	I_ACTION	16_27_27	after
+17_6_6	REPORTING	0_3_3	before
+17_9_9	ASPECTUAL	17_6_6	before
+17_11_11	OCCURRENCE	17_9_9	overlap
+19_9_9	TIMEX	-1_-1_-1	Depend-on
+19_12_12	I_ACTION	19_9_9	overlap
+20_1_1	ASPECTUAL	19_9_9	overlap
+20_3_3	I_ACTION	20_1_1	overlap
+21_1_1	I_ACTION	19_12_12	overlap
+23_1_1	I_STATE	0_3_3	overlap
+24_8_8	OCCURRENCE	0_3_3	before
+25_15_15	OCCURRENCE	0_3_3	overlap
+25_17_17	OCCURRENCE	25_15_15	after
+27_1_1	STATE	27_5_8	overlap
+27_5_8	TIMEX	-1_-1_-1	Depend-on
+28_6_6	OCCURRENCE	0_3_3	before
+29_3_3	STATE	0_3_3	overlap
+30_2_2	STATE	29_3_3	overlap
+31_2_2	I_STATE	0_3_3	before
+31_4_4	I_ACTION	31_2_2	after
+31_8_8	OCCURRENCE	31_4_4	after
+32_3_3	OCCURRENCE	31_8_8	overlap
+32_8_8	OCCURRENCE	32_3_3	after
+33_7_7	REPORTING	0_3_3	overlap
+33_10_10	OCCURRENCE	33_7_7	before
+34_3_3	I_STATE	0_3_3	overlap
+34_5_5	OCCURRENCE	34_3_3	after
+35_5_5	OCCURRENCE	0_3_3	before
+36_1_1	I_ACTION	33_7_7	overlap
+36_3_3	REPORTING	36_1_1	after
+36_7_7	OCCURRENCE	36_3_3	overlap
+38_6_6	OCCURRENCE	0_3_3	after
+38_8_8	OCCURRENCE	38_6_6	overlap
+38_12_12	OCCURRENCE	38_8_8	after
+39_2_2	I_STATE	0_3_3	overlap
+39_4_4	ASPECTUAL	39_2_2	after
+40_1_1	TIMEX	-1_-1_-1	Depend-on
+40_2_2	STATE	40_1_1	overlap
+41_3_3	STATE	40_1_1	overlap
+43_9_9	REPORTING	0_3_3	before
+43_19_19	ASPECTUAL	43_9_9	before
+44_5_5	REPORTING	0_3_3	before
+44_9_9	STATE	44_5_5	overlap
+45_10_10	I_ACTION	0_3_3	after
+45_14_14	OCCURRENCE	45_10_10	after
+46_5_5	TIMEX	-1_-1_-1	Depend-on
+46_11_11	OCCURRENCE	46_5_5	overlap
+47_2_2	REPORTING	46_5_5	before
+47_7_7	OCCURRENCE	47_2_2	after
+48_4_4	I_ACTION	47_2_2	overlap
+48_6_6	I_ACTION	48_4_4	after
+48_7_7	I_ACTION	48_6_6	overlap
+50_2_2	REPORTING	48_4_4	after
+51_0_2	TIMEX	-1_-1_-1	Depend-on
+51_11_11	OCCURRENCE	51_0_2	overlap
+52_3_3	OCCURRENCE	52_4_5	overlap
+52_4_5	TIMEX	-1_-1_-1	Depend-on
+53_3_3	OCCURRENCE	52_3_3	overlap
+54_5_5	I_ACTION	0_3_3	before
+55_12_12	I_ACTION	54_5_5	overlap
+57_7_7	OCCURRENCE	57_11_11	before
+57_11_11	TIMEX	-1_-1_-1	Depend-on
+58_1_1	TIMEX	-1_-1_-1	Depend-on
+58_4_4	I_ACTION	58_1_1	overlap
+59_2_2	I_ACTION	58_4_4	overlap
+59_7_7	I_ACTION	59_2_2	before
+60_7_7	REPORTING	59_2_2	overlap
+60_10_10	REPORTING	60_7_7	before
+61_7_7	REPORTING	61_8_8	overlap
+61_8_8	TIMEX	-1_-1_-1	Depend-on
+62_2_2	REPORTING	61_7_7	overlap
+
+filename:ABC19980114.1830.0611.tml:SNT_LIST
+wall street journal DCT
+In Washington today, the Federal Aviation Administration released air traffic control tapes from the night the TWA Flight eight hundred went down.
+There's nothing new on why the plane exploded, but you cannot miss the moment.
+ABC's Lisa Stark has more.
+There was no hint of trouble in the last conversation between controllers and TWA pilot Steven Snyder
+TWA eight hundred climb maintain one five thousand.
+TWA's eight hundred heavy climb and maintain one five thousand leavin- three thousand.
+But a minute and a half later, a pilot from a nearby flight calls in.
+Ah, we just saw an explosion up ahead of us here about sixteen thousand feet or something like that.
+It just went down.
+The controller at Boston center tries to raise TWA eight hundred.
+TWA eight hundred, if you hear center, ident.
+There is no response.
+Later, the controller asks the Eastwind pilot for more details.
+Ah yes, sir.
+It- It just blew up in the air, and then we saw two fireballs go down to the, to the water, and there was a big small, ah, smoke, from ah , coming up from that.
+At one point, when it became clear controllers could not contact the plane, someone said a prayer.
+TWA eight hundred, center
+I think that was him.
+I think so.
+God bless him.
+Lisa Stark ABC news Washington
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_2_2	TIMEX	-1_-1_-1	Depend-on
+1_7_7	OCCURRENCE	1_2_2	overlap
+6_6_6	OCCURRENCE	0_3_3	before
+7_1_5	TIMEX	-1_-1_-1	Depend-on
+8_3_3	PERCEPTION	7_1_5	after
+9_2_2	OCCURRENCE	8_3_3	overlap
+10_7_7	OCCURRENCE	9_2_2	after
+11_5_5	PERCEPTION	10_7_7	overlap
+13_3_3	OCCURRENCE	10_7_7	after
+15_3_3	OCCURRENCE	13_3_3	before
+16_5_5	I_STATE	15_3_3	after
+16_10_10	OCCURRENCE	16_5_5	overlap
+
+filename:ABC19980304.1830.1636.tml:SNT_LIST
+wall street journal DCT
+Finally today, we learned that the space agency has finally taken a giant leap forward.
+Air Force Lieutenant Colonel Eileen Collins will be named commander of the Space Shuttle Columbia for a mission in December.
+Colonel Collins has been the co-pilot before, but this time she's the boss.
+Here's ABC's Ned Potter.
+Even two hundred miles up in space, there has been a glass ceiling.
+It wasn't until twenty years after the first astronauts were chosen that NASA finally included six women, and they were all scientists, not pilots.
+No woman has actually been in charge of a mission until now.
+Just the fact that we 're doing the job that we 're doing makes us role models.
+That was Eileen Collins, after she flew as the first ever co-pilot.
+Being commander is different.
+It means supervising the rest of the crew in training and leading them in flight.
+It is, in short, the kind of management job many American women say they've had to fight for.
+In space, some say female pilots were held up until now by the lack of piloting opportunities for them in the military.
+Once Colonel Collins was picked as a NASA astronaut, she followed a normal progression within NASA.
+Nobody hurried her up.
+No one held her back.
+Many NASA watchers say female astronauts have become part of the agency's routine.
+But they still have catching up to do two hundred and thirty four Americans have flown in space, only twenty six of them women.
+Ned Potter, ABC News.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_1_1	TIMEX	-1_-1_-1	Depend-on
+1_3_3	REPORTING	1_1_1	overlap
+1_10_10	OCCURRENCE	1_3_3	before
+2_8_8	I_ACTION	2_19_19	overlap
+2_19_19	TIMEX	-1_-1_-1	Depend-on
+8_13_13	OCCURRENCE	0_3_3	overlap
+9_6_6	OCCURRENCE	0_3_3	before
+13_7_7	OCCURRENCE	13_10_10	before
+13_10_10	TIMEX	-1_-1_-1	Depend-on
+14_4_4	I_ACTION	9_6_6	before
+15_1_1	OCCURRENCE	14_4_4	after
+16_2_2	OCCURRENCE	15_1_1	overlap
+17_3_3	REPORTING	0_3_3	overlap
+17_7_7	OCCURRENCE	17_3_3	before
+
+filename:APW19980213.1380.tml:SNT_LIST
+wall street journal DCT
+CAGUAS, Puerto Rico (AP) _ Kidnappers kept their promise to kill a store owner they took hostage and police found the man's dismembered and decapitated body Friday wrapped in plastic garbage bags.
+Police confirmed Friday that the body found along a highway in this municipality 15 miles south of San Juan belonged to Jorge Hernandez, 49.
+Hernandez was kidnapped from his small, neighborhood store in the town of Trujillo Alto at 10 p.m. Wednesday, police said.
+His kidnappers demanded a ransom of dlrs 1 million, but negotiations broke off at noon Thursday.
+Police gave no details about the negotiations with the kidnappers for the return of Hernandez.
+The store owner's body was found with the arms and head cut off and the parts stuffed in separate garbage bags.
+A passerby called police to report the body alongside the road.
+Puerto Rico Police Superintendent Pedro Toledo urged people who might be targeted by kidnappers to be alert.
+``There has been an increase in Puerto Rico in this kind of thing and some of these bands of kidnappers are made up of foreigners,'' Toledo said.
+While some Latin American countries such as Mexico and Colombia have suffered from a rash of kidnappings in recent years, the crime has not been common in this U.S. commonwealth.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_6_6	ASPECTUAL	0_3_3	before
+1_15_15	OCCURRENCE	1_6_6	before
+2_1_1	REPORTING	2_2_2	overlap
+2_2_2	TIMEX	-1_-1_-1	Depend-on
+2_19_19	STATE	2_1_1	overlap
+3_2_2	OCCURRENCE	3_15_17	overlap
+3_15_17	TIMEX	-1_-1_-1	Depend-on
+4_2_2	I_ACTION	3_2_2	after
+4_14_15	TIMEX	-1_-1_-1	Depend-on
+5_1_1	REPORTING	4_14_15	after
+6_5_5	OCCURRENCE	5_1_1	after
+6_11_11	OCCURRENCE	6_5_5	before
+7_2_2	OCCURRENCE	6_5_5	after
+7_5_5	OCCURRENCE	7_2_2	after
+8_6_6	I_ACTION	0_3_3	before
+10_11_11	OCCURRENCE	10_18_19	overlap
+10_18_19	TIMEX	-1_-1_-1	Depend-on
+
+filename:PRI19980121.2000.2591.tml:SNT_LIST
+wall street journal DCT
+Now for today's geography quiz.
+We're off in search of an ancient and exotic city.
+An officially sanctioned one, too.
+UNESCO declared it a protected site for its beauty and its historical significance.
+The city could have used some special protection in nineteen seventy-nine when the Soviet Union invaded Afghanistan.
+Most of the city's monuments were destroyed, including a magnificent tiled mosque, which dominated the skyline for centuries.
+The people here are famous throughout central Asia for their skill in fashioning pottery and tile, glass too.
+Some families have kept their glass working secrets for more than two thousand years.
+Even though this city is in Afghanistan, most people here speak a dialect of the Persian language, and have long standing cultural ties with neighboring Iran.
+Think you got it?
+Well, frankly, I do n't , but the answer is coming up in just a few minutes.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_2_2	TIMEX	-1_-1_-1	Depend-on
+2_1_1	I_ACTION	1_2_2	overlap
+4_1_1	I_ACTION	0_3_3	before
+5_4_4	I_ACTION	5_9_10	overlap
+5_9_10	TIMEX	-1_-1_-1	Depend-on
+5_15_15	OCCURRENCE	5_9_10	overlap
+6_6_6	OCCURRENCE	5_15_15	after
+8_3_3	OCCURRENCE	8_9_13	overlap
+8_9_13	TIMEX	-1_-1_-1	Depend-on
+10_0_0	I_STATE	-1_-1_-1	Depend-on
+10_2_2	OCCURRENCE	-1_-1_-1	Depend-on
+
+filename:APW19980227.0468.tml:SNT_LIST
+wall street journal DCT
+MOSCOW (AP) _ The mayor of Moscow has allocated funds to help build a museum in honor of Mikhail Kalashnikov, the Russian who gave his name to the world's most widely wielded weapon, according to a news agency report Friday.
+Kalashnikov designed the AK-47 automatic rifle, famed for its reliability and effectiveness.
+Together with its derivatives, the Kalashnikov rifle has been used by the police and armies of 55 countries and an assortment of guerrillas, terrorists and just plain thugs around the globe.
+Seventy-five million copies of the rifle have been built since it entered production in February 1947, making it history's most widely distributed weapon.
+UR The ITAR-Tass, 4th graf pvs (pvs/ji)
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_8_8	OCCURRENCE	0_3_3	before
+2_1_1	OCCURRENCE	0_3_3	before
+3_9_9	OCCURRENCE	0_3_3	before
+4_8_8	OCCURRENCE	4_14_15	after
+4_11_11	ASPECTUAL	4_14_15	overlap
+4_14_15	TIMEX	-1_-1_-1	Depend-on
+
+filename:CNN19980222.1130.0084.tml:SNT_LIST
+wall street journal DCT
+CNN headline news, I'm Sachi Koto.
+Diplomacy appears to be making headway in resolving the united nation's standoff with Iraq.
+A UN spokesman says UN secretary general Kofi Annan is on the verge of a breakthrough, but added it's not done yet.
+Annan wrapped up a three hour meeting with Iraqi president Saddam Hussein in Baghdad today.
+He's expected to meet with Iraqi deputy prime minister Tariq Aziz later this afternoon.
+One major sticking point has been Iraq's proposal to open it's presidential sites for no more than sixty days.
+The UN security council insists any deal must allow UN inspectors unrestricted access to all suspected weapons sites.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+2_1_1	I_STATE	0_3_3	overlap
+2_4_4	I_ACTION	2_1_1	overlap
+3_3_3	REPORTING	0_3_3	overlap
+4_1_1	ASPECTUAL	4_14_14	overlap
+4_14_14	TIMEX	-1_-1_-1	Depend-on
+5_1_1	I_STATE	4_1_1	overlap
+7_4_4	I_ACTION	0_3_3	overlap
+7_8_8	I_STATE	7_4_4	after
+
+filename:ea980120.1830.0456.tml:SNT_LIST
+wall street journal DCT
+The Pentagon said today it will re-examine the question are the remains inside the Tomb of the Unknown from the Vietnam War, in fact, known?
+CBS News first reported last night that the tomb may contain the remains of Air Force pilot Michael Blassie.
+There was a suspicion the body was Blassie because his uniform and ID card were found near the body in Vietnam.
+But subsequently, they were lost.
+Blassie's mother now wants the remains in the tomb tested for DNA.
+EDGE_LIST
+1_2_2	REPORTING	1_3_3	overlap
+1_3_3	TIMEX	-1_-1_-1	Depend-on
+1_6_6	I_ACTION	1_2_2	after
+2_3_3	REPORTING	2_4_5	overlap
+2_4_5	TIMEX	-1_-1_-1	Depend-on
+2_10_10	OCCURRENCE	2_3_3	overlap
+
+filename:PRI19980205.2000.1890.tml:SNT_LIST
+wall street journal DCT
+The US is bolstering its military presence in the gulf, as President Clinton discussed the Iraq crisis with the one ally who has backed his threat of force, British prime minister Tony Blair.
+The World's Nancy Marshall reports on Mr. Blair's current visit to Washington and the special relationship between the two leaders.
+President Clinton rolled out the red carpet for prime minister Blair, welcoming him not only as a close ally, but a close friend.
+Posing for photographers with Clinton, Blair pledged to stand united with the president against Iraq, warning Saddam Hussein that the threat of force is real.
+The British aircraft carrier invincible is now patrolling the Persian Gulf alongside three US vessels.
+Washington and London are virtually alone in warning Iraq of military strikes if it does n't back down on the weapons inspection issue.
+President Clinton says he and Blair will stand together not just on Iraq but also on arresting the terrorists suspected of blowing up Pan Am flight one oh three over Scotland.
+For The World I'm Nancy Marshall in Washington.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_3_3	OCCURRENCE	0_3_3	overlap
+1_13_13	I_ACTION	0_3_3	before
+3_2_2	OCCURRENCE	0_3_3	before
+3_11_11	OCCURRENCE	3_2_2	overlap
+4_0_0	OCCURRENCE	3_2_2	after
+5_6_6	TIMEX	-1_-1_-1	Depend-on
+5_7_7	OCCURRENCE	5_6_6	overlap
+6_16_16	OCCURRENCE	-1_-1_-1	Depend-on
+7_2_2	REPORTING	0_3_3	overlap
+7_7_7	STATE	7_2_2	after

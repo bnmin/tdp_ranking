@@ -1,0 +1,143 @@
+filename:APW19980227.0487.tml:SNT_LIST
+wall street journal DCT
+JERUSALEM (AP) _ Taking the stand in her own defense, a friend of Yitzhak Rabin's assassin said Friday that she regretted calling the prime minister a traitor and praying for his death.
+Margalit Har-Shefi, 22, has pleaded innocent to charges that she failed to report Yigal Amir's plan to kill Rabin.
+She took the stand for more than four hours Friday in a Tel Aviv magistrate's court.
+Amir, 27, is serving a life sentence for the November 1995 assassination of Rabin at a Tel Aviv peace rally.
+Newspaper reports have said Amir was infatuated with Har-Shefi and may have been trying to impress her by killing the prime minister.
+Har-Shefi acknowledged she told police interrogators that Rabin was a traitor and that she prayed for him to have a heart attack and die.
+She said Rabin's murder was ``a black stain on Israel,'' Israel radio and Israel army radio reported.
+Har-Shefi said she heard Amir talk about killing Rabin but did not tell the police because she did not believe he was serious.
+Instead, she turned to her community rabbi in the Jewish West Bank settlement of Beit El and told him about Amir's statements.
+The rabbi said called the talk about killing Rabin `` nonsense,'' and said Jews are prohibited from killing one another, the radio reports said.
+Har-Shefi described Amir as an ``original thinker,'' as well as delusional and a liar.
+She also denied accusations made by Amir's brother, Hagai, that she joined an anti-Arab underground movement.
+She said she gave the Amir brothers false information regarding the location of a weapons and ammunition cache when they asked her to help organize such a movement.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_3_3	OCCURRENCE	1_17_17	overlap
+1_17_17	TIMEX	-1_-1_-1	Depend-on
+2_4_4	I_ACTION	0_3_3	before
+3_1_1	OCCURRENCE	3_9_9	overlap
+3_9_9	TIMEX	-1_-1_-1	Depend-on
+4_3_3	STATE	0_3_3	overlap
+5_3_3	REPORTING	0_3_3	before
+6_1_1	I_ACTION	0_3_3	before
+6_3_3	I_ACTION	6_1_1	before
+7_1_1	REPORTING	6_1_1	overlap
+8_1_1	REPORTING	7_1_1	overlap
+8_3_3	PERCEPTION	8_1_1	before
+9_2_2	OCCURRENCE	8_3_3	after
+10_2_2	REPORTING	9_2_2	after
+10_3_3	I_ACTION	10_2_2	overlap
+10_5_5	OCCURRENCE	10_3_3	before
+12_2_2	I_ACTION	8_1_1	overlap
+13_1_1	REPORTING	12_2_2	overlap
+13_3_3	OCCURRENCE	13_1_1	before
+13_20_20	I_ACTION	13_3_3	overlap
+13_23_23	I_ACTION	13_20_20	after
+13_24_24	OCCURRENCE	13_23_23	overlap
+
+filename:CNN19980223.1130.0960.tml:SNT_LIST
+wall street journal DCT
+Despite the recent possibility of military conflict with Iraq, oil prices have been falling, that's because of a worldwide glut of oil.
+Now with a diplomatic solution to the crisis seemingly at hand, get set for oil prices from the Brent north sea variety to light swede crude to fall further.
+Oil prices have come down from the middle of October from a twenty-two dollar barrel level down to the fourteen dollars we 're seeing today.
+that 's built up a heck of a momentum and that momentum will look to increase.
+ah next up is that thirteen dollar a barrel level we saw in the winter of nineteen ninety-four.
+Weakened oil prices have already made life easier for motorists at the gas pump.
+Gas prices fell nearly two cents a gallon over the last two weeks.
+That according to the Lundberg survey of ten thousand gas stations nationwide.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_13_13	OCCURRENCE	0_3_3	overlap
+2_0_0	TIMEX	-1_-1_-1	Depend-on
+2_12_12	I_ACTION	2_0_0	after
+2_27_27	OCCURRENCE	2_12_12	after
+3_3_3	OCCURRENCE	3_6_9	after
+3_6_9	TIMEX	-1_-1_-1	Depend-on
+4_2_2	OCCURRENCE	3_3_3	after
+6_5_5	I_ACTION	0_3_3	before
+7_2_2	OCCURRENCE	7_9_12	overlap
+7_9_12	TIMEX	-1_-1_-1	Depend-on
+
+filename:NYT19980212.0019.tml:SNT_LIST
+wall street journal DCT
+NEW YORK _ A Brooklyn woman who was watching her clothes dry in a laundromat was killed Thursday evening when two would-be robbers emptied their pistols into the store, the police said.
+The men appeared in the store at 469 Vermont St. in Brownsville around 7:15 p.m., after the victim, Linda Sanders, 35, had finished her cleaning and was waiting for her clothes to dry, detectives said.
+``It looks as though they panicked,'' a detective, speaking on condition of anonymity, said of the robbers.
+``They intended to rob the place.
+There were four or five people inside, and they just started firing.''
+Ms. Sanders was hit several times and was pronounced dead at the scene.
+The other customers fled, and the police said it did not appear that anyone else was injured.
+The men took no money from their victim or from the establishment, said Detective Joseph Pentangelo, a Police Department spokesman.
+Victor Miranda, who lives in Ms. Sanders' apartment building at 405 Williams Ave., said the laundry machines in the building were removed a few years ago to make room for management offices.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_16_16	OCCURRENCE	1_17_18	overlap
+1_17_18	TIMEX	-1_-1_-1	Depend-on
+1_23_23	OCCURRENCE	1_16_16	overlap
+2_2_2	OCCURRENCE	2_12_14	overlap
+2_12_14	TIMEX	-1_-1_-1	Depend-on
+2_22_22	ASPECTUAL	2_2_2	before
+3_1_1	PERCEPTION	0_3_3	before
+3_5_5	OCCURRENCE	3_1_1	overlap
+4_1_1	I_ACTION	2_2_2	overlap
+4_3_3	OCCURRENCE	4_1_1	after
+6_3_3	OCCURRENCE	1_16_16	before
+7_3_3	OCCURRENCE	6_3_3	after
+7_7_7	REPORTING	7_3_3	after
+7_11_11	I_ACTION	7_7_7	overlap
+8_2_2	OCCURRENCE	7_3_3	overlap
+9_13_13	REPORTING	8_2_2	after
+9_21_21	OCCURRENCE	9_22_25	overlap
+9_22_25	TIMEX	-1_-1_-1	Depend-on
+9_27_27	I_ACTION	9_21_21	after
+
+filename:PRI19980216.2000.0170.tml:SNT_LIST
+wall street journal DCT
+The British government has formally called for Sinn Fein, the IRA's political wing, to be expelled from the multiparty peace talks on northern Ireland.
+The move had been widely expected after northern Ireland police said they believe the IRA was behind two killings in Belfast last week.
+Sinn Fein chairman Mitchell McLaughlin says the party will challenge the move by legal means if they have to.
+We 're going to fight it.
+And uh we 've already challenged , very strongly, the uh the terms in which this has been presented.
+But we 're challenging it on the ground that uh the RUC uh have offered an opinion, and this opinion is going to be used as a mechanism for ejecting us from the talks, and uh that's a very serious.
+Any decision to expel Sinn Fein must be agreed jointly by the governments of both Britain and the Irish Republic.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_5_5	I_ACTION	0_3_3	before
+1_15_15	OCCURRENCE	1_5_5	after
+2_5_5	I_STATE	2_21_22	after
+2_10_10	REPORTING	2_21_22	overlap
+2_12_12	I_STATE	2_10_10	overlap
+2_21_22	TIMEX	-1_-1_-1	Depend-on
+3_5_5	REPORTING	0_3_3	overlap
+3_9_9	OCCURRENCE	3_5_5	after
+4_4_4	I_ACTION	0_3_3	after
+5_5_5	OCCURRENCE	0_3_3	before
+6_3_3	OCCURRENCE	0_3_3	overlap
+7_8_8	I_ACTION	0_3_3	overlap
+
+filename:ed980111.1130.0089.tml:SNT_LIST
+wall street journal DCT
+The lights are out and the heat is off and those vital signs are not likely to change much over the next several days for p- people in parts of the northeastern US and eastern Canada.
+A powerful ice storm continues to maintain its grip.
+Yesterday New York governor George Pataki toured five counties that have been declared under a state of emergency.
+He added one more today.
+Helicopters are flying over northern New York today trying to locate people stranded without food, heat or medicine.
+In Maine, about a half million people still don't have power and they 're going to have to live without it for a while.
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_3_3	STATE	0_3_3	overlap
+2_4_4	ASPECTUAL	0_3_3	overlap
+2_6_6	STATE	2_4_4	overlap
+3_0_0	TIMEX	-1_-1_-1	Depend-on
+3_6_6	OCCURRENCE	3_0_0	overlap
+4_1_1	ASPECTUAL	4_4_4	overlap
+4_4_4	TIMEX	-1_-1_-1	Depend-on
+5_2_2	OCCURRENCE	5_7_7	overlap
+5_7_7	TIMEX	-1_-1_-1	Depend-on
+5_8_8	I_ACTION	5_2_2	overlap
+5_10_10	OCCURRENCE	5_8_8	after
+6_9_9	STATE	0_3_3	overlap
+
