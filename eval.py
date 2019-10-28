@@ -104,8 +104,8 @@ def evaluate(gold_tuples, parsed_tuples, get_tuple_set):
     r = sum([score[1] for score in scores]) / len(scores)
     f = sum([score[2] for score in scores]) / len(scores)
 
-    # print('macro average: p = {:.3f}, r = {:.3f}, f = {:.3f}'.format(p, r, f))
-    print('macro average: f = {:.3f}'.format(f), end='; ')
+    print('macro average: p = {:.3f}, r = {:.3f}, f = {:.3f}'.format(p, r, f))
+    # print('macro average: f = {:.3f}'.format(f), end='; ')
 
     # micro average - n.B. this is the same as accuracy
     true_p = sum([count[0] for count in counts])
@@ -116,8 +116,8 @@ def evaluate(gold_tuples, parsed_tuples, get_tuple_set):
     r = true_p / (true_p + false_n)
     f = 2 * p * r / (p + r) if p + r != 0 else 0
 
-    # print('micro average: p = {:.3f}, r = {:.3f}, f = {:.3f}'.format(p, r, f))
-    print('micro average: f = {:.3f}\n'.format(f))
+    print('micro average: p = {:.3f}, r = {:.3f}, f = {:.3f}'.format(p, r, f))
+    # print('micro average: f = {:.3f}\n'.format(f))
 
     print_timex(timex_counts)
     print_DCT_children(DCT_counts)
