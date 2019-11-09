@@ -19,7 +19,8 @@ def get_arg_parser():
                             default="full")
 
     arg_parser.add_argument("--classifier", help="which classifier to use",
-                            choices=["bilstm", "bert_bilstm", "bert_as_classifier", "bert_as_classifier_alt"])
+                            choices=["bilstm", "glove_bilstm", "bert_bilstm", "bert_as_classifier",
+                                     "bert_as_classifier_alt"])
 
     arg_parser.add_argument("--iter", help="number of iterations", type=int)
 
@@ -98,6 +99,14 @@ def main(raw_args=None):  # Optionally take arguments to method instead of from 
                                       args.size_hidden, args.TE_label_set,
                                       args.size_TE_label_embed, edge_label_set,
                                       args.max_words_per_node, max_padded_candidate_length)
+
+    elif args.classifier == 'glove_bilstm':
+        from glove_bilstm_classifier import GloVeBilstmClassifier
+
+        classifier = GloVeBilstmClassifier(args.size_lstm,
+                                           args.size_hidden, args.TE_label_set,
+                                           args.size_TE_label_embed, edge_label_set,
+                                           args.max_words_per_node, max_padded_candidate_length)
 
     elif args.classifier == 'bert_bilstm':
         from bert_bilstm_classifier import BertBilstmClassifier

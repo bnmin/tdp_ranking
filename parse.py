@@ -21,8 +21,8 @@ def get_arg_parser():
                             choices=['none', 'timex_event', 'time_ml', 'full'], default='full')
 
     arg_parser.add_argument("--classifier", help="which classifier to use",
-                            choices=["bilstm", "bert_bilstm", "bert_as_classifier", "bert_as_classifier_alt",
-                                     "baseline"])
+                            choices=["bilstm", "glove_bilstm", "bert_bilstm", "bert_as_classifier",
+                                     "bert_as_classifier_alt", "baseline"])
     arg_parser.add_argument("--labeled", help="parse with edge labels",
                             action="store_true", default=False)
 
@@ -145,6 +145,11 @@ if __name__ == '__main__':
         from bilstm_classifier import BilstmClassifier
 
         classifier = BilstmClassifier.load(args.model_file)
+
+    elif args.classifier == 'glove_bilstm':
+        from glove_bilstm_classifier import GloVeBilstmClassifier
+
+        classifier = GloVeBilstmClassifier.load(args.model_file)
 
     elif args.classifier == 'bert_bilstm':
         from bert_bilstm_classifier import BertBilstmClassifier
