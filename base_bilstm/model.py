@@ -5,8 +5,9 @@ from base_bilstm.attention import get_nodes
 from base_bilstm.embedding import EmbeddingLayer, get_words_and_labels_for_doc
 from base_bilstm.features import get_candidates_array
 from shared.attention import AttentionModel
-from shared.features import candidate_array_length, numeric_feature_length, get_all_numeric_features
+from shared.features import candidate_array_length, numeric_feature_length
 from shared.model import get_gold_candidate_one_hot
+from shared.numeric_features import get_all_numeric_features
 from shared.scoring import ScoringModel
 
 

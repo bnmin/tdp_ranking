@@ -1,7 +1,6 @@
-import numpy as np
 import tensorflow as tf
 
-from shared.numeric_features import numeric_feature_length, get_numeric_features
+from shared.numeric_features import numeric_feature_length
 
 candidate_array_length = 6
 
@@ -115,12 +114,3 @@ def FeatureModel(size_bi_lstm):
     inputs = [batched_bi_lstm_output, candidates, candidate_numeric_features,
               batched_attended_nodes]
     return tf.keras.Model(inputs=inputs, outputs=[features], name='feature_model')
-
-
-def get_all_numeric_features(child_parent_candidates, node_count, sentence_count, TE_label_vocab):
-    """Provide method to calculate this outside of model / gradient descent for efficiency"""
-
-    return np.stack([get_numeric_features(parent, child, node_count, sentence_count, TE_label_vocab)
-                     for candidates_for_child in child_parent_candidates
-                     for parent, child, gold_label in candidates_for_child], axis=0)
-

@@ -6,8 +6,9 @@ from frozen_bert.features import get_candidates_array
 from shared.attention import AttentionModel
 from frozen_bert.te_embedding import get_TE_labels_for_doc, TEEmbeddingLayer
 from shared.bert_layer import BatchedBertLayer, bert_output_size, InputExample, convert_examples_to_inputs
-from shared.features import candidate_array_length, numeric_feature_length, get_all_numeric_features
+from shared.features import candidate_array_length, numeric_feature_length
 from shared.model import get_gold_candidate_one_hot
+from shared.numeric_features import get_all_numeric_features
 from shared.scoring import ScoringModel
 
 
