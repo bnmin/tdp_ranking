@@ -17,14 +17,12 @@ def get_arg_parser():
     return arg_parser
 
 
-if __name__ == '__main__':
+def main():
     arg_parser = get_arg_parser()
     args = arg_parser.parse_args()
-
     # Read as a list of documents
     data = open(args.data_file, 'r', encoding='utf-8').read()
     doc_list = data.strip().split('\n\nfilename')
-
     for i, document in enumerate(doc_list):
         doc_lines = document.strip().split('\n')
 
@@ -54,3 +52,33 @@ if __name__ == '__main__':
             graph.layout(prog='dot')
             filename = args.data_file.split('/')[-1]
             graph.draw('{}/{}_doc{}.png'.format(args.output_dir, filename, i))
+
+
+def plot_paper_tree():
+    """Plot the example tree for the published paper"""
+    graph = pgv.AGraph(directed=True)
+
+    # Nodes
+    graph.add_node('root', label='root')
+    graph.add_node('DCT', label='DCT' + r'\n' + 'TIMEX')
+    graph.add_node('Friday', label='Friday' + r'\n' + 'TIMEX')
+    for word in ['share', 'ruled', 'called', 'saying', 'create', 'signed']:
+        graph.add_node(word, label=word + r'\n' + 'EVENT')
+
+    # Parent, child, edge_label
+    graph.add_edge('root', 'DCT', label='depends on')
+    graph.add_edge('root', 'Friday', label='depends on')
+    graph.add_edge('DCT', 'share', label='overlap')
+    graph.add_edge('DCT', 'ruled', label='before')
+    graph.add_edge('DCT', 'called', label='before')
+    graph.add_edge('called', 'saying', label='overlap')
+    graph.add_edge('saying', 'create', label='after')
+    graph.add_edge('Friday', 'signed', label='overlap')
+
+    graph.layout(prog='dot')
+    graph.draw('extracted_outputs/paper_parsetree.png')
+
+
+if __name__ == '__main__':
+    main()
+    # plot_paper_tree()
