@@ -19,21 +19,24 @@ else:
 
 class BertBilstmClassifier(Classifier):
     def __init__(self, TE_label_set, size_TE_label_embed, size_lstm, size_feed_forward, edge_label_set,
-                 max_sequence_length, max_words_per_node, max_candidate_count):
+                 max_sequence_length, max_words_per_node, max_candidate_count, disable_handcrafted_features):
         super().__init__(TE_label_set, edge_label_set)
 
         # Keep parameters so we can write them to a save file
         self.save_config = {'TE_label_set': TE_label_set, 'size_TE_label_embed': size_TE_label_embed,
                             'size_lstm': size_lstm, 'size_feed_forward': size_feed_forward,
                             'edge_label_set': edge_label_set, 'max_sequence_length': max_sequence_length,
-                            'max_words_per_node': max_words_per_node, 'max_candidate_count': max_candidate_count}
+                            'max_words_per_node': max_words_per_node, 'max_candidate_count': max_candidate_count,
+                            'disable_handcrafted_features': disable_handcrafted_features}
 
         self.max_sequence_length = max_sequence_length
         self.max_words_per_node = max_words_per_node
+        self.disable_handcrafted_features = disable_handcrafted_features
 
         print('Building model...')
         self.model = Model(len(self.TE_label_vocab), size_TE_label_embed, TE_label_set, size_lstm, size_feed_forward,
-                           self.size_edge_label, max_sequence_length, max_words_per_node, max_candidate_count)
+                           self.size_edge_label, max_sequence_length, max_words_per_node, max_candidate_count,
+                           disable_handcrafted_features)
 
     def compile_model(self):
         self.model.compile(optimizer=tf.keras.optimizers.Adam(),
@@ -46,15 +49,16 @@ class BertBilstmClassifier(Classifier):
         bert_tokenizer = create_tokenizer_from_hub_module()
         gold_inputs_labels = data_to_inputs_and_gold(gold_data, bert_tokenizer, labeled, self.TE_label_vocab,
                                                      self.TE_label_set, self.edge_label_set, self.max_words_per_node,
-                                                     self.max_sequence_length)
+                                                     self.max_sequence_length, self.disable_handcrafted_features)
         silver_inputs_labels = None
         if silver_data:
             silver_inputs_labels = data_to_inputs_and_gold(silver_data, bert_tokenizer, labeled, self.TE_label_vocab,
                                                            self.TE_label_set, self.edge_label_set,
-                                                           self.max_words_per_node, self.max_sequence_length)
+                                                           self.max_words_per_node, self.max_sequence_length,
+                                                           self.disable_handcrafted_features)
         dev_inputs_labels = data_to_inputs_and_gold(dev_data, bert_tokenizer, labeled, self.TE_label_vocab,
                                                     self.TE_label_set, self.edge_label_set, self.max_words_per_node,
-                                                    self.max_sequence_length)
+                                                    self.max_sequence_length, self.disable_handcrafted_features)
 
         return gold_inputs_labels, silver_inputs_labels, dev_inputs_labels
 
@@ -68,7 +72,7 @@ class BertBilstmClassifier(Classifier):
         bert_tokenizer = create_tokenizer_from_hub_module()
         model_inputs = get_model_inputs(bert_tokenizer, sentence_list, child_parent_candidates,
                                         self.TE_label_vocab, self.TE_label_set, self.max_words_per_node,
-                                        self.max_sequence_length)
+                                        self.max_sequence_length, self.disable_handcrafted_features)
 
         # Remove batch dimension with [0]
         scores_by_child = self.model.predict(model_inputs, batch_size=1, verbose=self.verbose)[0]
@@ -103,7 +107,8 @@ class BertBilstmClassifier(Classifier):
             classifier = cls(config['TE_label_set'], config['size_TE_label_embed'],
                              config['size_lstm'], config['size_feed_forward'],
                              config['edge_label_set'], config['max_sequence_length'],
-                             config['max_words_per_node'], config['max_candidate_count'])
+                             config['max_words_per_node'], config['max_candidate_count'],
+                             config['disable_handcrafted_features'])
 
             classifier.load_model(model_file)
             return classifier

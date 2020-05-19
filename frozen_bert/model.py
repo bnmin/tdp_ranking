@@ -3,8 +3,8 @@ import tensorflow as tf
 
 from frozen_bert.attention import get_nodes_array
 from frozen_bert.features import get_candidates_array
-from shared.attention import AttentionModel
 from frozen_bert.te_embedding import get_TE_labels_for_doc, TEEmbeddingLayer
+from shared.attention import AttentionModel
 from shared.bert_layer import BatchedBertLayer, bert_output_size, InputExample, convert_examples_to_inputs
 from shared.features import candidate_array_length, numeric_feature_length
 from shared.model import get_gold_candidate_one_hot
@@ -13,7 +13,7 @@ from shared.scoring import ScoringModel
 
 
 def Model(size_TE_label_vocab, size_TE_label_embed, TE_label_set, size_lstm, size_feed_forward, size_edge_label,
-          max_sequence_length, max_words_per_node, max_candidate_count):
+          max_sequence_length, max_words_per_node, max_candidate_count, disable_handcrafted_features):
     # Inputs
     TE_label_ids = tf.keras.Input(shape=(None,), dtype=tf.int32, name='TE_label_ids')
     bert_input_ids = tf.keras.Input(shape=(None, max_sequence_length), dtype=tf.int32, name='input_ids')
@@ -29,20 +29,28 @@ def Model(size_TE_label_vocab, size_TE_label_embed, TE_label_set, size_lstm, siz
     TE_embedding_layer = TEEmbeddingLayer(size_TE_label_vocab, size_TE_label_embed, TE_label_set)
     # Split rest into inner model to ensure embeddings get calculated first (since non-differentiable)
     inner_model = InnerModel(size_TE_label_embed, size_lstm, size_feed_forward, size_edge_label,
-                             max_sequence_length, max_words_per_node, max_candidate_count)
+                             max_sequence_length, max_words_per_node, max_candidate_count,
+                             disable_handcrafted_features)
 
     # Assemble pieces
     TE_label_embeddings = TE_embedding_layer(TE_label_ids)
-    scores = inner_model([bert_input_ids, bert_input_masks, bert_segment_ids, TE_label_embeddings, nodes, candidates,
-                          numeric_features])
+    if disable_handcrafted_features:
+        inner_inputs = [bert_input_ids, bert_input_masks, bert_segment_ids, TE_label_embeddings, nodes, candidates]
+    else:
+        inner_inputs = [bert_input_ids, bert_input_masks, bert_segment_ids, TE_label_embeddings, nodes, candidates,
+                        numeric_features]
+    scores = inner_model(inner_inputs)
 
     # Use Functional API to handle multiple inputs
-    inputs = [bert_input_ids, bert_input_masks, bert_segment_ids, TE_label_ids, nodes, candidates, numeric_features]
+    if disable_handcrafted_features:
+        inputs = [bert_input_ids, bert_input_masks, bert_segment_ids, TE_label_ids, nodes, candidates]
+    else:
+        inputs = [bert_input_ids, bert_input_masks, bert_segment_ids, TE_label_ids, nodes, candidates, numeric_features]
     return tf.keras.Model(inputs=inputs, outputs=[scores])
 
 
 def InnerModel(size_TE_label_embed, size_lstm, size_feed_forward, size_edge_label,
-               max_sequence_length, max_words_per_node, max_candidate_count):
+               max_sequence_length, max_words_per_node, max_candidate_count, disable_handcrafted_features):
     # Inputs
     bert_input_ids = tf.keras.Input(shape=(None, max_sequence_length), dtype=tf.int32, name='input_ids')
     bert_input_masks = tf.keras.Input(shape=(None, max_sequence_length), dtype=tf.int32, name='input_masks')
@@ -67,7 +75,8 @@ def InnerModel(size_TE_label_embed, size_lstm, size_feed_forward, size_edge_labe
     size_bi_lstm = 2 * size_lstm
 
     attention_model = AttentionModel(size_bi_lstm, max_words_per_node)
-    scoring_model = ScoringModel(size_bi_lstm, size_feed_forward, size_edge_label, max_candidate_count)
+    scoring_model = ScoringModel(size_bi_lstm, size_feed_forward, size_edge_label, max_candidate_count,
+                                 disable_handcrafted_features)
 
     # Assemble pieces
     bert_embeddings = bert_layer((bert_input_ids, bert_input_masks, bert_segment_ids))
@@ -76,17 +85,23 @@ def InnerModel(size_TE_label_embed, size_lstm, size_feed_forward, size_edge_labe
     bi_lstm_output = bi_lstm_layer(document_embeddings)
     attended_nodes = attention_model([nodes, bi_lstm_output])
 
-    scoring_inputs = [bi_lstm_output, candidates, numeric_features, attended_nodes]
+    if disable_handcrafted_features:
+        scoring_inputs = [bi_lstm_output, candidates, attended_nodes]
+    else:
+        scoring_inputs = [bi_lstm_output, candidates, numeric_features, attended_nodes]
     scores = scoring_model(scoring_inputs)
 
     # Use Functional API to handle multiple inputs
-    inputs = [bert_input_ids, bert_input_masks, bert_segment_ids, TE_label_embeddings, nodes, candidates,
-              numeric_features]
+    if disable_handcrafted_features:
+        inputs = [bert_input_ids, bert_input_masks, bert_segment_ids, TE_label_embeddings, nodes, candidates]
+    else:
+        inputs = [bert_input_ids, bert_input_masks, bert_segment_ids, TE_label_embeddings, nodes, candidates,
+                  numeric_features]
     return tf.keras.Model(inputs=inputs, outputs=[scores], name='inner_model')
 
 
 def get_model_inputs(bert_tokenizer, sentence_list, child_parent_candidates, TE_label_vocab, TE_label_set,
-                     max_words_per_node, max_sequence_length):
+                     max_words_per_node, max_sequence_length, disable_handcrafted_features):
     sorted_nodes = get_sorted_nodes(child_parent_candidates)
 
     bert_inputs, word_in_doc_to_tokens_map = get_bert_inputs(bert_tokenizer, sentence_list, max_sequence_length)
@@ -94,19 +109,23 @@ def get_model_inputs(bert_tokenizer, sentence_list, child_parent_candidates, TE_
                                          TE_label_set, max_sequence_length)
     nodes = get_nodes_array(sorted_nodes, max_words_per_node, word_in_doc_to_tokens_map)
     candidates = get_candidates_array(child_parent_candidates, word_in_doc_to_tokens_map)
-    numeric_features = get_all_numeric_features(child_parent_candidates, len(nodes),
-                                                len(sentence_list), TE_label_vocab)
 
-    return {
+    features_dict = {
         # Use extra wrapping list for batch dimension
         'input_ids': np.array([bert_inputs['input_ids']]),
         'input_masks': np.array([bert_inputs['input_masks']]),
         'segment_ids': np.array([bert_inputs['segment_ids']]),
         'TE_label_ids': np.array([TE_label_ids]),
         'nodes': np.array([nodes]),
-        'candidates': np.array([candidates]),
-        'numeric_features': np.array([numeric_features])
+        'candidates': np.array([candidates])
     }
+
+    if not disable_handcrafted_features:
+        numeric_features = get_all_numeric_features(child_parent_candidates, len(nodes),
+                                                    len(sentence_list), TE_label_vocab)
+        # Use extra wrapping list for batch dimension
+        features_dict['numeric_features'] = np.array([numeric_features])
+    return features_dict
 
 
 def get_bert_inputs(tokenizer, sentence_list, max_sequence_length):
@@ -139,15 +158,15 @@ def get_sorted_nodes(child_parent_candidates):
 
 
 def data_to_inputs_and_gold(data, bert_tokenizer, labeled, TE_label_vocab, TE_label_set, edge_label_set,
-                            max_words_per_node, max_sequence_length):
+                            max_words_per_node, max_sequence_length, disable_handcrafted_features):
     inputs_and_gold = []
     for document in data:
         sentence_list, child_parent_candidates = document
         model_inputs = get_model_inputs(bert_tokenizer, sentence_list, child_parent_candidates,
-                                        TE_label_vocab, TE_label_set, max_words_per_node, max_sequence_length)
+                                        TE_label_vocab, TE_label_set, max_words_per_node, max_sequence_length,
+                                        disable_handcrafted_features)
         # Use extra wrapping list for batch dimension
         gold_one_hots = np.array([[get_gold_candidate_one_hot(candidates_for_child, labeled, edge_label_set)
                                    for candidates_for_child in child_parent_candidates]])
         inputs_and_gold.append((model_inputs, gold_one_hots))
     return inputs_and_gold
-

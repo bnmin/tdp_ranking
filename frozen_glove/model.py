@@ -19,14 +19,18 @@ def BiLSTMModel(size_TE_label_vocab, size_TE_label_embed,
 
 
 def Model(size_TE_label_vocab, size_lstm, size_feed_forward,
-          TE_label_set, size_TE_label_embed, size_edge_label, max_words_per_node, max_candidate_count):
+          TE_label_set, size_TE_label_embed, size_edge_label, max_words_per_node, max_candidate_count,
+          disable_handcrafted_features):
     # Inputs
     word_label_ids = tf.keras.Input(shape=(None, 2), dtype=tf.int32, name='word_label_ids')
     nodes = tf.keras.Input(shape=(None, 2), dtype=tf.int32, name='nodes')
     candidates = tf.keras.Input(shape=(None, max_candidate_count, candidate_array_length), dtype=tf.int32,
                                 name='candidates')
-    numeric_features = tf.keras.Input(shape=(None, numeric_feature_length), dtype=tf.float32,
-                                      name='numeric_features')
+    if disable_handcrafted_features:
+        numeric_features = None
+    else:
+        numeric_features = tf.keras.Input(shape=(None, numeric_feature_length), dtype=tf.float32,
+                                          name='numeric_features')
 
     # Sub-models
     bi_lstm_model = BiLSTMModel(size_TE_label_vocab, size_TE_label_embed,
@@ -34,12 +38,21 @@ def Model(size_TE_label_vocab, size_lstm, size_feed_forward,
     size_bi_lstm = 2 * size_lstm
 
     attention_model = AttentionModel(size_bi_lstm, max_words_per_node)
-    scoring_model = ScoringModel(size_bi_lstm, size_feed_forward, size_edge_label, max_candidate_count)
+    scoring_model = ScoringModel(size_bi_lstm, size_feed_forward, size_edge_label, max_candidate_count,
+                                 disable_handcrafted_features)
 
     # Assemble pieces
     bi_lstm_output = bi_lstm_model(word_label_ids)
     attended_nodes = attention_model([nodes, bi_lstm_output])
-    scores = scoring_model([bi_lstm_output, candidates, numeric_features, attended_nodes])
+    if disable_handcrafted_features:
+        scoring_inputs = [bi_lstm_output, candidates, attended_nodes]
+    else:
+        scoring_inputs = [bi_lstm_output, candidates, numeric_features, attended_nodes]
+    scores = scoring_model(scoring_inputs)
 
     # Use Functional API to handle multiple inputs
-    return tf.keras.Model(inputs=[word_label_ids, nodes, candidates, numeric_features], outputs=[scores])
+    if disable_handcrafted_features:
+        inputs = [word_label_ids, nodes, candidates]
+    else:
+        inputs = [word_label_ids, nodes, candidates, numeric_features]
+    return tf.keras.Model(inputs=inputs, outputs=[scores])

@@ -12,17 +12,20 @@ from shared.input_label_sequence import InputSequence
 
 # noinspection PyAbstractClass
 class BertBaseClassifier(Classifier):
-    def __init__(self, TE_label_set, edge_label_set, max_sequence_length, max_candidate_count):
+    def __init__(self, TE_label_set, edge_label_set, max_sequence_length, max_candidate_count,
+                 disable_handcrafted_features):
         super().__init__(TE_label_set, edge_label_set)
 
         # Keep parameters so we can write them to a save file
         self.save_config = {'TE_label_set': TE_label_set, 'edge_label_set': edge_label_set,
-                            'max_sequence_length': max_sequence_length, 'max_candidate_count': max_candidate_count}
+                            'max_sequence_length': max_sequence_length, 'max_candidate_count': max_candidate_count,
+                            'disable_handcrafted_features': disable_handcrafted_features}
 
         self.max_sequence_length = max_sequence_length
         self.max_candidate_count = max_candidate_count
+        self.disable_handcrafted_features = disable_handcrafted_features
 
-        self.model = Model(max_sequence_length, self.size_edge_label)
+        self.model = Model(max_sequence_length, self.size_edge_label, disable_handcrafted_features)
 
     def compile_model(self):
         self.model.compile(optimizer=tf.keras.optimizers.Adam(),

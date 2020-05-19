@@ -47,6 +47,8 @@ def get_arg_parser():
                             default=12, type=int)
     arg_parser.add_argument("--max_words_per_node", help="maximum words to consider per node",
                             default=5, type=int)
+    arg_parser.add_argument("--no_handcrafted_features", help="disable hand-crafted features",
+                            action="store_true", default=False)
 
     # arguments for training the TF neural model
     arg_parser.add_argument("--early_stopping_warmup", help="iterations before starting early stopping on dev loss",
@@ -98,7 +100,8 @@ def main(raw_args=None):  # Optionally take arguments to method instead of from 
         classifier = BilstmClassifier(vocab, args.size_embed, args.size_lstm,
                                       args.size_hidden, args.TE_label_set,
                                       args.size_TE_label_embed, edge_label_set,
-                                      args.max_words_per_node, max_padded_candidate_length)
+                                      args.max_words_per_node, max_padded_candidate_length,
+                                      args.no_handcrafted_features)
 
     elif args.classifier == 'glove_bilstm':
         from glove_bilstm_classifier import GloVeBilstmClassifier
@@ -106,26 +109,28 @@ def main(raw_args=None):  # Optionally take arguments to method instead of from 
         classifier = GloVeBilstmClassifier(args.size_lstm,
                                            args.size_hidden, args.TE_label_set,
                                            args.size_TE_label_embed, edge_label_set,
-                                           args.max_words_per_node, max_padded_candidate_length)
+                                           args.max_words_per_node, max_padded_candidate_length,
+                                           args.no_handcrafted_features)
 
     elif args.classifier == 'bert_bilstm':
         from bert_bilstm_classifier import BertBilstmClassifier
 
         classifier = BertBilstmClassifier(args.TE_label_set, args.size_TE_label_embed, args.size_lstm, args.size_hidden,
                                           edge_label_set, args.max_sequence_length, args.max_words_per_node,
-                                          max_padded_candidate_length)
+                                          max_padded_candidate_length, args.no_handcrafted_features)
 
     elif args.classifier == 'bert_as_classifier':
         from bert_classifier import BertClassifier
 
         classifier = BertClassifier(args.TE_label_set, edge_label_set, args.max_sequence_length,
-                                    max_padded_candidate_length)
+                                    max_padded_candidate_length, args.no_handcrafted_features)
 
     elif args.classifier == 'bert_as_classifier_alt':
         from bert_alt_classifier import BertAltClassifier
 
         classifier = BertAltClassifier(args.TE_label_set, edge_label_set, args.max_sequence_length,
-                                       max_padded_candidate_length, args.max_sentence_span)
+                                       max_padded_candidate_length, args.max_sentence_span,
+                                       args.no_handcrafted_features)
 
     else:
         raise ValueError('Invalid classifier argument')

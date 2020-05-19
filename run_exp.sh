@@ -13,6 +13,7 @@ dataset=$5
 eval_type=$6
 env=$7
 TE_label_set=$8
+no_handcrafted=$9
 
 # Set up data
 blending_init=""
@@ -79,11 +80,11 @@ fi
 
 # Set up Python environment
 if [[ ${env} == "--gpu" ]];
-  then
-      python=/nfs/raid88/u10/users/hross/software/anaconda3/envs/tdp_ranking_gpu_13/bin/python
-  else
-      python=/nfs/raid88/u10/users/hross/software/anaconda3/envs/tdp_ranking_13/bin/python
-  fi
+then
+    python=/nfs/raid88/u10/users/hross/software/anaconda3/envs/tdp_ranking_gpu_13/bin/python
+else
+    python=/nfs/raid88/u10/users/hross/software/anaconda3/envs/tdp_ranking_13/bin/python
+fi
 
 # Set up parameters
 if [[ ${TE_label_set} != "timex_event" && ${TE_label_set} != "none" ]]
@@ -99,6 +100,13 @@ else
     max_seq_length="--max_sequence_length 128"
 fi
 
+if [[ ${no_handcrafted} == "--no_handcrafted_features" ]];
+then
+  handcrafted="--no_handcrafted_features"
+else
+  handcrafted=""
+fi
+
 echo exp_id ${exp_id}
 echo iter ${iter}
 echo train_file ${train_file}
@@ -107,6 +115,7 @@ echo dev_file ${dev_file}
 echo test_file ${test_file}
 echo labeled
 echo TE_label_set ${TE_label_set}
+echo handcrafted_features ${handcrafted}
 
 model_file=${model_dir}/${train_file_stem}.${classifier}-model.${exp_id}
 
@@ -130,7 +139,7 @@ fi
 ################
 
 echo training ...
-${python} -u ${script_dir}/train.py --train_file ${train_file} ${silver_train_file_param} --dev_file ${dev_file} --model_file ${model_file} --TE_label_set ${TE_label_set} --edge_label_set time_ml --classifier ${classifier} --labeled --iter ${iter} ${blending_init} ${blending_epochs} ${blend_factor} ${early_stopping_warmup} ${early_stopping_threshold} ${max_seq_length}
+${python} -u ${script_dir}/train.py --train_file ${train_file} ${silver_train_file_param} --dev_file ${dev_file} --model_file ${model_file} --TE_label_set ${TE_label_set} --edge_label_set time_ml --classifier ${classifier} --labeled --iter ${iter} ${blending_init} ${blending_epochs} ${blend_factor} ${early_stopping_warmup} ${early_stopping_threshold} ${max_seq_length} ${handcrafted}
 
 ######################################
 ##  parse and evaluate on dev data  ##
@@ -154,23 +163,26 @@ fi
 ##  parse and evaluate on test data  ##
 #######################################
 
-echo parsing test data ...
-if [[ -f ${model_dir}/${test_file_stem}.stage2-${classifier}-parsed-labeled.${exp_id} ]];
+if [[ ${eval_type} != "--no-eval" ]];
 then
-    mv ${model_dir}/${test_file_stem}.stage2-${classifier}-parsed-labeled.${exp_id} ~/.recycle
+  echo parsing test data ...
+  if [[ -f ${model_dir}/${test_file_stem}.stage2-${classifier}-parsed-labeled.${exp_id} ]];
+  then
+      mv ${model_dir}/${test_file_stem}.stage2-${classifier}-parsed-labeled.${exp_id} ~/.recycle
+  fi
+
+  ${python} ${script_dir}/parse.py --test_file ${test_file} --model_file ${model_file} --parsed_file ${model_dir}/${test_file_stem}.stage2-${classifier}-parsed-labeled.${exp_id} --TE_label_set ${TE_label_set} --classifier ${classifier} --labeled
+
+  echo eval test data ...
+  ${python} ${script_dir}/eval.py --gold_file ${test_file} --parsed_file ${model_dir}/${test_file_stem}.stage2-${classifier}-parsed-labeled.${exp_id} --labeled
 fi
-
-${python} ${script_dir}/parse.py --test_file ${test_file} --model_file ${model_file} --parsed_file ${model_dir}/${test_file_stem}.stage2-${classifier}-parsed-labeled.${exp_id} --TE_label_set ${TE_label_set} --classifier ${classifier} --labeled
-
-echo eval test data ...
-${python} ${script_dir}/eval.py --gold_file ${test_file} --parsed_file ${model_dir}/${test_file_stem}.stage2-${classifier}-parsed-labeled.${exp_id} --labeled
 
 #############################################
 ##  for models trained with labeled data,  ##
 ##    do unlabeled evaluations too         ## 
 #############################################
 
-if [[ ${eval_type} != "--labeled-only" ]];
+if [[ ${eval_type} != "--labeled-only" && ${eval_type} != "--no-eval" ]];
 then
     if [[ ${eval_type} == "--full" ]];
     then

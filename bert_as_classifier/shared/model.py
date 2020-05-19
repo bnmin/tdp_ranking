@@ -6,7 +6,7 @@ from shared.bert_layer import BertLayer
 from shared.numeric_features import numeric_feature_length
 
 
-def Model(max_sequence_length, size_edge_label):
+def Model(max_sequence_length, size_edge_label, disable_handcrafted_features):
     # Inputs
     bert_input_ids = tf.keras.Input(shape=(max_sequence_length,), dtype=tf.int32, name='input_ids')
     bert_input_masks = tf.keras.Input(shape=(max_sequence_length,), dtype=tf.int32, name='input_masks')
@@ -20,11 +20,17 @@ def Model(max_sequence_length, size_edge_label):
 
     # Assemble
     bert_outputs = bert_layer((bert_input_ids, bert_input_masks, bert_segment_ids))
-    features = concat_layer([bert_outputs, numeric_features])
+    if disable_handcrafted_features:
+        features = bert_outputs
+    else:
+        features = concat_layer([bert_outputs, numeric_features])
     scores = dense_layer(features)
 
     # Use Functional API to handle multiple inputs
-    inputs = [bert_input_ids, bert_input_masks, bert_segment_ids, numeric_features]
+    if disable_handcrafted_features:
+        inputs = [bert_input_ids, bert_input_masks, bert_segment_ids]
+    else:
+        inputs = [bert_input_ids, bert_input_masks, bert_segment_ids, numeric_features]
     return tf.keras.Model(inputs=inputs, outputs=[scores], name='feature_scoring_model')
 
 
