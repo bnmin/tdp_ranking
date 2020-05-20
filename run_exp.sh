@@ -1,5 +1,5 @@
 ##########################
-##  parameter settings  ## 
+##  parameter settings  ##
 ##########################
 
 # Get directory of this script
@@ -93,6 +93,14 @@ then
     TE_label_set="time_ml"
 fi
 
+if [[ ${classifier} == "bert_as_classifier" || ${classifier} == "bert_as_classifier_alt" ]];
+then
+  learning_rate="--lr 0.0001"
+else
+  # This is Adam's default learning rate
+  learning_rate="--lr 0.001"
+fi
+
 if [[ ${classifier} == "bert_as_classifier_alt" ]];
 then
     max_seq_length="--max_sequence_length 512"
@@ -135,11 +143,11 @@ else
 fi
 
 ################
-##  training  ##  
+##  training  ##
 ################
 
 echo training ...
-${python} -u ${script_dir}/train.py --train_file ${train_file} ${silver_train_file_param} --dev_file ${dev_file} --model_file ${model_file} --TE_label_set ${TE_label_set} --edge_label_set time_ml --classifier ${classifier} --labeled --iter ${iter} ${blending_init} ${blending_epochs} ${blend_factor} ${early_stopping_warmup} ${early_stopping_threshold} ${max_seq_length} ${handcrafted}
+${python} -u ${script_dir}/train.py --train_file ${train_file} ${silver_train_file_param} --dev_file ${dev_file} --model_file ${model_file} --TE_label_set ${TE_label_set} --edge_label_set time_ml --classifier ${classifier} --labeled --iter ${iter} ${blending_init} ${blending_epochs} ${blend_factor} ${early_stopping_warmup} ${early_stopping_threshold} ${max_seq_length} ${learning_rate} ${handcrafted}
 
 ######################################
 ##  parse and evaluate on dev data  ##
@@ -179,7 +187,7 @@ fi
 
 #############################################
 ##  for models trained with labeled data,  ##
-##    do unlabeled evaluations too         ## 
+##    do unlabeled evaluations too         ##
 #############################################
 
 if [[ ${eval_type} != "--labeled-only" && ${eval_type} != "--no-eval" ]];

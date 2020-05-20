@@ -41,9 +41,9 @@ class GloVeBilstmClassifier(Classifier):
                            size_feed_forward, TE_label_set, size_TE_label_embed, self.size_edge_label,
                            max_words_per_node, max_candidate_count, disable_handcrafted_features)
 
-    def compile_model(self):
+    def compile_model(self, learning_rate):
         # Compile model
-        self.model.compile(optimizer=tf.keras.optimizers.Adam(),
+        self.model.compile(optimizer=tf.keras.optimizers.Adam(lr=learning_rate),
                            loss=tf.keras.losses.categorical_crossentropy,
                            metrics=[tf.keras.metrics.categorical_accuracy])
 

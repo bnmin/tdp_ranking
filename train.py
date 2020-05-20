@@ -62,6 +62,8 @@ def get_arg_parser():
     arg_parser.add_argument("--blend_factor", help="fraction of silver data to use "
                                                    "(blend a^k of silver data in kth blending iteration)",
                             default=0.75, type=float)
+    arg_parser.add_argument("--lr", help="initial learning rate",
+                            default=0.001, type=float)
 
     return arg_parser
 
@@ -137,7 +139,7 @@ def main(raw_args=None):  # Optionally take arguments to method instead of from 
 
     classifier.train(gold_training_data, silver_training_data, dev_data, args.model_file, args.labeled,
                      args.iter, early_stopping_warmup, args.early_stopping_threshold,
-                     blending_init, blending_epochs, args.blend_factor)
+                     blending_init, blending_epochs, args.blend_factor, args.lr)
 
 
 if __name__ == '__main__':

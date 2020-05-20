@@ -51,11 +51,11 @@ class Classifier:
 
     def train(self, gold_training_data, silver_training_data, dev_data, output_file, labeled,
               epochs, early_stopping_warmup, early_stopping_threshold,
-              blending_initialization, blending_epochs, blend_factor):
+              blending_initialization, blending_epochs, blend_factor, learning_rate):
         start = timer()
 
         print('Compiling model and initializing variables...')
-        self.compile_model()
+        self.compile_model(learning_rate)
 
         print('Preparing data...')
         gold_inputs_labels, silver_inputs_labels, dev_inputs_labels = self.data_to_inputs_and_gold(gold_training_data,
@@ -71,7 +71,7 @@ class Classifier:
 
         self.save_model(output_file)
 
-    def compile_model(self):
+    def compile_model(self, learning_rate):
         raise NotImplementedError('Must override in subclass')
 
     def data_to_inputs_and_gold(self, gold_data, silver_data, dev_data, labeled):

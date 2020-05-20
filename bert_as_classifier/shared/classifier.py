@@ -27,8 +27,8 @@ class BertBaseClassifier(Classifier):
 
         self.model = Model(max_sequence_length, self.size_edge_label, disable_handcrafted_features)
 
-    def compile_model(self):
-        self.model.compile(optimizer=tf.keras.optimizers.Adam(),
+    def compile_model(self, learning_rate):
+        self.model.compile(optimizer=tf.keras.optimizers.Adam(lr=learning_rate),
                            loss=self.loss,
                            metrics=[self.accuracy])
         # Ensure BERT variables initialized

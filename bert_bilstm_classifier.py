@@ -38,8 +38,8 @@ class BertBilstmClassifier(Classifier):
                            self.size_edge_label, max_sequence_length, max_words_per_node, max_candidate_count,
                            disable_handcrafted_features)
 
-    def compile_model(self):
-        self.model.compile(optimizer=tf.keras.optimizers.Adam(),
+    def compile_model(self, learning_rate):
+        self.model.compile(optimizer=tf.keras.optimizers.Adam(lr=learning_rate),
                            loss=tf.keras.losses.categorical_crossentropy,
                            metrics=[tf.keras.metrics.categorical_accuracy])
         # Ensure BERT variables initialized
