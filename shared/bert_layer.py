@@ -14,7 +14,7 @@ from bert.tokenization import FullTokenizer
 bert_path = 'https://tfhub.dev/google/bert_uncased_L-12_H-768_A-12/1'
 # Tell TF Hub to use cached version - n.B. if changing the bert_path, must update hash in path to vocab_file
 # See https://medium.com/@xianbao.qian/how-to-run-tf-hub-locally-without-internet-connection-4506b850a915
-cache_dir = '/nfs/raid88/u10/users/hross/tf_hub_cache'
+cache_dir = '/tmp' # SET YOUR DESIRED CACHE DIRECTORY HERE
 os.environ["TFHUB_CACHE_DIR"] = cache_dir
 vocab_file = cache_dir + '/5a395eafef2a37bd9fc55d7f6ae676d2a134a838/assets/vocab.txt'
 do_lower_case = True

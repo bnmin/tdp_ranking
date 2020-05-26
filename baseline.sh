@@ -1,7 +1,7 @@
 # Get directory of this script
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-python=/nfs/raid88/u10/users/hross/software/anaconda3/envs/tdp_ranking/bin/python
+python=python # PUT YOUR ABSOLUTE PATH TO YOUR CONDA ENV WITH TENSORFLOW (CPU) HERE
 
 test_file_stem=timebank-dense.yuchen-tdt.test
 default_label=$1

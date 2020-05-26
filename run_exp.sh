@@ -81,9 +81,9 @@ fi
 # Set up Python environment
 if [[ ${env} == "--gpu" ]];
 then
-    python=/nfs/raid88/u10/users/hross/software/anaconda3/envs/tdp_ranking_gpu_13/bin/python
+    python=python # PUT YOUR ABSOLUTE PATH TO YOUR CONDA ENV WITH TENSORFLOW-GPU HERE
 else
-    python=/nfs/raid88/u10/users/hross/software/anaconda3/envs/tdp_ranking_13/bin/python
+    python=python # PUT YOUR ABSOLUTE PATH TO YOUR CONDA ENV WITH TENSORFLOW (CPU) HERE
 fi
 
 # Set up parameters

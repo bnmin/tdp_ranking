@@ -3,8 +3,7 @@ import codecs
 from collections import Counter
 
 # In eval, we don't have access to the node, just the node ID, so we can't use is_DCT on the node.
-# In the training data / TimeML corpus it's always 0_3_3, for SERIF it's 0_0_0
-# We don't have labelled SERIF data so assume always 0_3_3
+# In the training data / TimeML corpus it's always 0_3_3
 DCT_node_id = '0_3_3'
 
 

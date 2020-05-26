@@ -3,14 +3,13 @@ import codecs
 import os
 
 from baseline_classifier import BaselineClassifier
+from data_preparation import make_test_data
 from data_structures import EDGE_LABEL_LIST_TIMEML
 
 
 def get_arg_parser():
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument("--test_file", help="test data to be parsed")
-    arg_parser.add_argument("--from_serif", help="test data file is in Serif format",
-                            action="store_true", default=False)
 
     arg_parser.add_argument("--model_file", help="the model to use")
     arg_parser.add_argument("--parsed_file", help="where to output the parsed results")
@@ -129,11 +128,6 @@ if __name__ == '__main__':
         pass
 
     # Make test data
-    if args.from_serif:
-        from data_preparation_serif import make_test_data
-    else:
-        from data_preparation import make_test_data
-
     test_data = make_test_data(args.test_file, pad_candidates=(args.classifier != 'baseline'))
 
     # Initialize classifier
