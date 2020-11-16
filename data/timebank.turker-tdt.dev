@@ -1,0 +1,98 @@
+filename:APW19980227.0487.tml:SNT_LIST
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_3_3	OCCURRENCE	0_3_3	overlap
+2_4_4	I_ACTION	0_3_3	overlap
+3_1_1	OCCURRENCE	3_9_9	overlap
+3_9_9	TIMEX	-1_-1_-1	Depend-on
+4_3_3	STATE	4_9_10	overlap
+4_9_10	TIMEX	-1_-1_-1	Depend-on
+5_3_3	REPORTING	0_3_3	overlap
+6_1_1	I_ACTION	0_3_3	overlap
+6_3_3	I_ACTION	6_1_1	after
+7_1_1	REPORTING	0_3_3	overlap
+8_1_1	REPORTING	0_3_3	overlap
+8_3_3	PERCEPTION	8_1_1	after
+9_2_2	OCCURRENCE	4_9_10	before
+10_2_2	REPORTING	9_2_2	after
+10_3_3	I_ACTION	10_2_2	overlap
+10_5_5	OCCURRENCE	10_3_3	after
+12_2_2	I_ACTION	7_1_1	overlap
+13_1_1	REPORTING	0_3_3	before
+13_3_3	OCCURRENCE	13_1_1	before
+13_20_20	I_ACTION	13_3_3	after
+13_23_23	I_ACTION	13_20_20	before
+13_24_24	OCCURRENCE	13_23_23	overlap
+
+filename:CNN19980223.1130.0960.tml:SNT_LIST
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_2_2	TIMEX	-1_-1_-1	Depend-on
+1_13_13	OCCURRENCE	1_2_2	overlap
+2_0_0	TIMEX	-1_-1_-1	Depend-on
+2_12_12	I_ACTION	2_0_0	overlap
+2_27_27	OCCURRENCE	2_12_12	overlap
+3_3_3	OCCURRENCE	3_6_9	after
+3_6_9	TIMEX	-1_-1_-1	Depend-on
+4_2_2	OCCURRENCE	3_6_9	after
+6_5_5	I_ACTION	0_3_3	overlap
+7_2_2	OCCURRENCE	7_9_12	overlap
+7_9_12	TIMEX	-1_-1_-1	Depend-on
+
+filename:NYT19980212.0019.tml:SNT_LIST
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_16_16	OCCURRENCE	1_17_18	overlap
+1_17_18	TIMEX	-1_-1_-1	Depend-on
+1_23_23	OCCURRENCE	1_17_18	overlap
+2_2_2	OCCURRENCE	2_12_14	overlap
+2_12_14	TIMEX	-1_-1_-1	Depend-on
+2_22_22	ASPECTUAL	2_12_14	before
+3_1_1	PERCEPTION	0_3_3	overlap
+3_5_5	OCCURRENCE	3_1_1	overlap
+4_1_1	I_ACTION	0_3_3	overlap
+4_3_3	OCCURRENCE	4_1_1	overlap
+6_3_3	OCCURRENCE	1_17_18	overlap
+7_3_3	OCCURRENCE	6_3_3	overlap
+7_7_7	REPORTING	7_3_3	overlap
+7_11_11	I_ACTION	7_7_7	overlap
+8_2_2	OCCURRENCE	0_3_3	overlap
+9_13_13	REPORTING	9_22_25	after
+9_21_21	OCCURRENCE	9_22_25	overlap
+9_22_25	TIMEX	-1_-1_-1	Depend-on
+9_27_27	I_ACTION	9_22_25	overlap
+
+filename:PRI19980216.2000.0170.tml:SNT_LIST
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_5_5	I_ACTION	0_3_3	overlap
+1_15_15	OCCURRENCE	1_5_5	after
+2_5_5	I_STATE	2_21_22	before
+2_10_10	REPORTING	2_21_22	overlap
+2_12_12	I_STATE	2_21_22	overlap
+2_21_22	TIMEX	-1_-1_-1	Depend-on
+3_5_5	REPORTING	0_3_3	overlap
+3_9_9	OCCURRENCE	3_5_5	after
+4_4_4	I_ACTION	3_9_9	after
+5_5_5	OCCURRENCE	0_3_3	overlap
+6_3_3	OCCURRENCE	0_3_3	overlap
+7_8_8	I_ACTION	0_3_3	overlap
+
+filename:ed980111.1130.0089.tml:SNT_LIST
+EDGE_LIST
+0_3_3	TIMEX	-1_-1_-1	Depend-on
+1_3_3	STATE	1_20_23	before
+1_20_23	TIMEX	-1_-1_-1	Depend-on
+2_4_4	ASPECTUAL	0_3_3	overlap
+2_6_6	STATE	2_4_4	overlap
+3_0_0	TIMEX	-1_-1_-1	Depend-on
+3_6_6	OCCURRENCE	3_0_0	overlap
+4_1_1	ASPECTUAL	4_4_4	overlap
+4_4_4	TIMEX	-1_-1_-1	Depend-on
+5_2_2	OCCURRENCE	5_7_7	overlap
+5_7_7	TIMEX	-1_-1_-1	Depend-on
+5_8_8	I_ACTION	5_7_7	overlap
+5_10_10	OCCURRENCE	5_7_7	overlap
+6_9_9	STATE	6_22_23	before
+6_22_23	TIMEX	-1_-1_-1	Depend-on
+
